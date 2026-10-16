@@ -28,6 +28,26 @@ WIDOWX_TASKS = (
 )
 
 
+class SimplerOctoCompatibility:
+    """Translate SimplerEnv's legacy pad-mask key to Octo's current API."""
+
+    def __init__(self, model: OctoModel) -> None:
+        self.model = model
+
+    def __getattr__(self, name):
+        return getattr(self.model, name)
+
+    def sample_actions(self, observations, tasks, **kwargs):
+        observations = dict(observations)
+        timestep_pad_mask = observations.pop("pad_mask")
+        return self.model.sample_actions(
+            observations,
+            tasks,
+            timestep_pad_mask=timestep_pad_mask,
+            **kwargs,
+        )
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--checkpoint", type=Path, required=True)
@@ -52,7 +72,7 @@ def configure_tensorflow(memory_limit: int) -> None:
 def load_policy(checkpoint: Path, step: int, seed: int) -> OctoInference:
     model = OctoModel.load_pretrained(str(checkpoint), step=step)
     return OctoInference(
-        model=model,
+        model=SimplerOctoCompatibility(model),
         dataset_id="bridge_dataset",
         policy_setup="widowx_bridge",
         init_rng=seed,

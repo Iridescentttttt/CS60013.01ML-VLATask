@@ -15,10 +15,15 @@ mkdir -p "$XDG_RUNTIME_DIR"
 chmod 700 "$XDG_RUNTIME_DIR"
 
 cd /root/vlalora
-python scripts/evaluate_octo_simpler.py \
-  --checkpoint /root/models/octo-small-1.5 \
-  --checkpoint-step 300000 \
-  --task widowx_spoon_on_towel \
-  --episodes 1 \
-  --seed 0 \
-  --output-dir /root/vlalora/results/smoke_spoon
+
+if [[ $# -eq 0 ]]; then
+  set -- \
+    --checkpoint /root/models/octo-small-1.5 \
+    --checkpoint-step 300000 \
+    --task widowx_spoon_on_towel \
+    --episodes 1 \
+    --seed 0 \
+    --output-dir /root/vlalora/results/smoke_spoon
+fi
+
+python scripts/evaluate_octo_simpler.py "$@"

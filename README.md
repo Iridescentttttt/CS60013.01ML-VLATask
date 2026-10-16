@@ -1,35 +1,70 @@
-# Octo-Small 1.5 在 SimplerEnv WidowX 中的部署与评估
+# Octo-Small 1.5 × SimplerEnv × WidowX
 
-本仓库提供一套已经在云端 NVIDIA A16 上实际跑通的 Octo-Small 1.5 推理流程。它从本地检查点加载模型，在 SimplerEnv 的 WidowX 任务中执行策略，并保存逐回合记录、汇总结果和 MP4 视频。
+本项目提供 Octo-Small 1.5 在 SimplerEnv WidowX 任务中的推理与评估代码。项目从本地模型目录加载检查点，通过兼容层连接 Octo 与 SimplerEnv，执行视觉语言控制策略，并输出逐回合记录、成功率汇总和视频。
 
-本文档面向第一次接手项目的合作者，包含从空白 Ubuntu 22.04、Python 3.10 和 CUDA 12.4 镜像开始的完整配置步骤。
+## 1. 方案说明
 
-## 1. 当前方案
-
-| 项目 | 选择 |
+| 项目 | 当前选择 |
 | --- | --- |
 | 模型 | `rail-berkeley/octo-small-1.5` |
-| 检查点 step | `300000` |
+| checkpoint step | `300000` |
 | 机器人 | WidowX |
-| Octo 动作统计 | `bridge_dataset` |
-| SimplerEnv policy setup | `widowx_bridge` |
+| 动作统计 | `bridge_dataset` |
+| policy setup | `widowx_bridge` |
 | 默认任务 | `widowx_spoon_on_towel` |
-| 另一个支持的任务 | `widowx_put_eggplant_in_basket` |
-| 模型目录 | `/root/models/octo-small-1.5` |
-| 运行结果目录 | `/root/vlalora/results` |
+| 另一支持任务 | `widowx_put_eggplant_in_basket` |
 
-当前代码执行的是预训练 Octo-Small 1.5 的仿真评估，不需要单独下载 BridgeData RLDS 训练集。WidowX 所需的 `bridge_dataset` 动作均值和标准差已经保存在模型的 `dataset_statistics.json` 中。只有继续做微调时才需要准备 RLDS 数据集。
+当前流程用于评估预训练模型。`bridge_dataset` 的动作均值和标准差已经包含在 Octo-Small 1.5 的 `dataset_statistics.json` 中，因此推理阶段不需要下载完整 BridgeData RLDS 数据集。进行微调训练时才需要另外准备 RLDS 数据。
 
-## 2. 已验证的平台和版本
+## 2. 推荐文件架构
 
-以下组合已于 2026-10-16 在云端完整执行一回合。
+将本项目、Octo、SimplerEnv 和模型放在同一个工作目录中：
 
-| 组件 | 已验证版本 |
+```text
+vla_workspace/
+├── vlalora/                       # 本项目
+│   ├── config/
+│   │   └── nvidia_icd.json
+│   ├── scripts/
+│   │   ├── evaluate_octo_simpler.py
+│   │   └── run_octo_simpler.sh
+│   └── results/
+├── SimplerEnv/                    # SimplerEnv 与 ManiSkill2_real2sim
+├── octo/                          # Octo 源码
+└── models/
+    └── octo-small-1.5/
+        ├── config.json
+        ├── dataset_statistics.json
+        ├── example_batch.msgpack
+        └── 300000/default/checkpoint
+```
+
+启动脚本会根据自身位置自动确定 `vlalora` 和工作目录，不依赖固定的绝对路径。默认约定如下：
+
+```text
+PROJECT_DIR    = run_octo_simpler.sh 所在项目的根目录
+WORKSPACE_DIR  = PROJECT_DIR 的父目录
+SIMPLERENV_DIR = WORKSPACE_DIR/SimplerEnv
+OCTO_DIR       = WORKSPACE_DIR/octo
+MODEL_DIR      = WORKSPACE_DIR/models/octo-small-1.5
+```
+
+如果采用不同目录结构，可以在运行时覆盖这些变量：
+
+```bash
+WORKSPACE_DIR=/data/vla \
+SIMPLERENV_DIR=/data/repos/SimplerEnv \
+OCTO_DIR=/data/repos/octo \
+MODEL_DIR=/data/models/octo-small-1.5 \
+bash scripts/run_octo_simpler.sh
+```
+
+## 3. 已验证的软件组合
+
+| 组件 | 版本 |
 | --- | --- |
-| Ubuntu | 22.04.4 LTS |
-| Python | 3.10.16，Miniconda 默认 `base` 环境 |
+| Python | 3.10 |
 | CUDA toolkit | 12.4 |
-| NVIDIA GPU | A16，驱动 580.65.06 |
 | NumPy | 1.24.4 |
 | TensorFlow | 2.15.0 |
 | JAX | 0.4.20 |
@@ -37,40 +72,45 @@
 | cuDNN Python wheel | 8.9.7.29 |
 | Flax | 0.7.5 |
 | Transformers | 4.55.4 |
-| SimplerEnv commit | `c701ea271b16b80616d6fed9713c4a50a0adea3b` |
-| ManiSkill2_real2sim commit | `ef7a4d4fdf4b69f2c2154db5b15b9ac8dfe10682` |
-| Octo commit | `241fb3514b7c40957a86d869fecb7c7fc353f540` |
+| Gymnasium | 0.29.1 |
+| SAPIEN | 2.2.2 |
+| SimplerEnv | `c701ea271b16b80616d6fed9713c4a50a0adea3b` |
+| ManiSkill2_real2sim | `ef7a4d4fdf4b69f2c2154db5b15b9ac8dfe10682` |
+| Octo | `241fb3514b7c40957a86d869fecb7c7fc353f540` |
+| dlimp | `5edaa4691567873d495633f2708982b42edf1972` |
 
-## 3. 最终目录结构
+## 4. 下载代码
 
-不要把仓库、模型和运行结果放到只读的 `/root/eb-public`。当前服务器的可写目录布局如下：
-
-```text
-/root/
-├── SimplerEnv/                    # SimplerEnv 与 ManiSkill2_real2sim 子模块
-├── octo/                          # Octo 源码
-├── models/
-│   └── octo-small-1.5/            # Hugging Face 模型检查点
-└── vlalora/                       # 本 Gitee 项目
-    ├── config/nvidia_icd.json
-    ├── scripts/evaluate_octo_simpler.py
-    ├── scripts/run_cloud_once.sh
-    └── results/
-```
-
-`/root` 位于当前容器的 30 GB overlay 文件系统中。Octo-Small 检查点约 523 MB；安装 TensorFlow、JAX、cuDNN、cuBLAS、Vulkan 和 SimplerEnv 后需要预留数 GB 空间。
-
-## 4. 从零部署
-
-以下命令均在服务器的 Miniconda 默认 `base` 环境中执行，不新建 conda 环境。
-
-### 4.1 安装系统图形库
-
-SAPIEN 需要 Vulkan、EGL 和视频编码库：
+创建工作目录并下载四个仓库：
 
 ```bash
-apt-get update
-apt-get install -y \
+export WORKSPACE="$HOME/vla_workspace"
+mkdir -p "$WORKSPACE"
+
+git clone https://gitee.com/karlshaus/vlalora.git "$WORKSPACE/vlalora"
+
+git clone --recurse-submodules \
+  https://github.com/allenai/SimplerEnv.git \
+  "$WORKSPACE/SimplerEnv"
+git -C "$WORKSPACE/SimplerEnv" checkout c701ea271b16b80616d6fed9713c4a50a0adea3b
+git -C "$WORKSPACE/SimplerEnv" submodule update --init --recursive
+
+git clone https://github.com/octo-models/octo.git "$WORKSPACE/octo"
+git -C "$WORKSPACE/octo" checkout 241fb3514b7c40957a86d869fecb7c7fc353f540
+
+git clone https://github.com/kvablack/dlimp.git "$WORKSPACE/dlimp"
+git -C "$WORKSPACE/dlimp" checkout 5edaa4691567873d495633f2708982b42edf1972
+```
+
+## 5. 安装依赖
+
+以下命令使用当前 Python 3.10 环境。可以使用 Miniconda `base`，也可以使用单独的 Python 3.10 环境。
+
+### 5.1 系统图形与视频库
+
+```bash
+sudo apt-get update
+sudo apt-get install -y \
   libvulkan1 \
   vulkan-tools \
   libegl1 \
@@ -82,37 +122,9 @@ apt-get install -y \
   ffmpeg
 ```
 
-### 4.2 下载三个代码仓库
-
-先下载本项目：
+### 5.2 基础数值包
 
 ```bash
-git clone https://gitee.com/karlshaus/vlalora.git /root/vlalora
-```
-
-该云端无法稳定直连 GitHub。下面使用本次实际成功的 `ghfast.top` 前缀下载官方仓库，并固定到已经验证的提交：
-
-```bash
-git clone --recurse-submodules \
-  https://ghfast.top/https://github.com/allenai/SimplerEnv.git \
-  /root/SimplerEnv
-
-git -C /root/SimplerEnv checkout c701ea271b16b80616d6fed9713c4a50a0adea3b
-git -C /root/SimplerEnv submodule update --init --recursive
-
-git clone \
-  https://ghfast.top/https://github.com/octo-models/octo.git \
-  /root/octo
-
-git -C /root/octo checkout 241fb3514b7c40957a86d869fecb7c7fc353f540
-```
-
-如果所在机器可以直连 GitHub，只需从上述 URL 中删除 `https://ghfast.top/` 前缀。
-
-### 4.3 配置 Python 镜像并固定基础数值包
-
-```bash
-python -m pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 python -m pip install --upgrade pip setuptools wheel
 
 python -m pip install --no-cache-dir \
@@ -122,24 +134,16 @@ python -m pip install --no-cache-dir \
   protobuf==3.20.3
 ```
 
-必须使用 `numpy==1.24.4`，不要只写 `numpy<2.0`，也不要让后续安装把它自动升级到 NumPy 2.x。
+必须固定 `numpy==1.24.4`。仅写 `numpy<2.0` 可能让不同安装顺序产生不同的 NumPy 1.x 版本。
 
-### 4.4 安装 SimplerEnv
+### 5.3 SimplerEnv
 
 ```bash
-python -m pip install -e /root/SimplerEnv/ManiSkill2_real2sim
-python -m pip install -e /root/SimplerEnv
+python -m pip install -e "$WORKSPACE/SimplerEnv/ManiSkill2_real2sim"
+python -m pip install -e "$WORKSPACE/SimplerEnv"
 ```
 
-当前实际使用的关键仿真包版本为：
-
-```text
-gymnasium==0.29.1
-sapien==2.2.2
-coacd==1.0.14
-```
-
-### 4.5 安装 TensorFlow 和数据处理依赖
+### 5.4 TensorFlow 与数据处理包
 
 ```bash
 python -m pip install --no-cache-dir \
@@ -158,52 +162,29 @@ python -m pip install --no-cache-dir \
   IPython==8.22.2
 ```
 
-这里固定 `tensorflow-metadata==1.15.0` 和 `protobuf==3.20.3`。安装最新的 `tensorflow-metadata` 会在导入 TFDS 时产生 `cannot import name 'runtime_version' from google.protobuf`。
-
-本推理流程不需要安装以下训练依赖：
+`tensorflow-metadata==1.15.0` 与 `protobuf==3.20.3` 必须成对固定。使用不匹配的版本会在导入 TFDS 时出现：
 
 ```text
-tf-agents
-dm-reverb
-apache-beam
-tfds-nightly
-tfp-nightly
-wandb
+cannot import name 'runtime_version' from google.protobuf
 ```
 
-这些包会引入额外的 TensorFlow、JAX 和 protobuf 约束，是此前依赖解析失败的主要来源。当前推理脚本不导入 wandb；需要进行微调训练时再为训练环境选择与 protobuf 约束相容的 wandb 版本。
-
-### 4.6 安装 GPU 版 JAX
-
-先安装与 Octo 当前代码匹配的 JAX，再单独安装 CUDA 12 jaxlib wheel：
+### 5.5 GPU 版 JAX
 
 ```bash
 python -m pip install --no-cache-dir jax==0.4.20
 
 python -m pip install --no-cache-dir --no-deps \
   'https://storage.googleapis.com/jax-releases/cuda12/jaxlib-0.4.20%2Bcuda12.cudnn89-cp310-cp310-manylinux2014_x86_64.whl'
-```
 
-基础镜像虽然包含 CUDA 12.4 和 NVIDIA 驱动，但没有完整 cuDNN。继续安装：
-
-```bash
 python -m pip install --no-cache-dir \
   nvidia-cublas-cu12==12.9.2.10 \
   nvidia-cuda-nvrtc-cu12==12.9.86 \
   nvidia-cudnn-cu12==8.9.7.29
 ```
 
-这些 wheel 的动态库位于：
+启动脚本会根据当前 Python 的 `site-packages` 自动找到 NVIDIA 动态库，不依赖某个 Miniconda 安装路径。
 
-```text
-/root/miniconda3/lib/python3.10/site-packages/nvidia/cublas/lib
-/root/miniconda3/lib/python3.10/site-packages/nvidia/cuda_nvrtc/lib
-/root/miniconda3/lib/python3.10/site-packages/nvidia/cudnn/lib
-```
-
-`scripts/run_cloud_once.sh` 会自动把它们加入 `LD_LIBRARY_PATH`，并设置 `JAX_PLATFORMS=cuda`。
-
-### 4.7 安装 Octo 依赖和源码
+### 5.6 Octo 依赖
 
 ```bash
 python -m pip install --no-cache-dir \
@@ -223,18 +204,11 @@ python -m pip install --no-deps \
   orbax-checkpoint==0.4.8 \
   tensorstore==0.1.45
 
-git clone \
-  https://ghfast.top/https://github.com/kvablack/dlimp.git \
-  /root/dlimp
-git -C /root/dlimp checkout 5edaa4691567873d495633f2708982b42edf1972
-python -m pip install -e /root/dlimp
-
-python -m pip install -e /root/octo --no-deps
+python -m pip install -e "$WORKSPACE/dlimp"
+python -m pip install -e "$WORKSPACE/octo" --no-deps
 ```
 
-上述 dlimp 提交就是当前云端实际安装的版本。这里也使用 GitHub 代理，避免 `pip install git+https://github.com/...` 在克隆阶段超时。
-
-最后再次固定几个容易被间接依赖改写的包：
+安装结束后再次固定容易被间接依赖改写的包：
 
 ```bash
 python -m pip install --no-cache-dir --no-deps \
@@ -243,211 +217,225 @@ python -m pip install --no-cache-dir --no-deps \
   tensorflow-metadata==1.15.0
 ```
 
-### 4.8 下载 Octo-Small 1.5
-
-```bash
-mkdir -p /root/models
-
-HF_ENDPOINT=https://hf-mirror.com python -c \
-  "from huggingface_hub import snapshot_download; snapshot_download(repo_id='rail-berkeley/octo-small-1.5', local_dir='/root/models/octo-small-1.5')"
-```
-
-下载成功后至少应包含：
+当前推理脚本不需要以下训练依赖：
 
 ```text
-/root/models/octo-small-1.5/config.json
-/root/models/octo-small-1.5/dataset_statistics.json
-/root/models/octo-small-1.5/example_batch.msgpack
-/root/models/octo-small-1.5/300000/default/checkpoint
+tf-agents
+dm-reverb
+apache-beam
+tfds-nightly
+tfp-nightly
+wandb
 ```
 
-其中 checkpoint 文件约 546 MB。
+需要进行微调时，再为训练代码建立相应的依赖组合。
 
-Octo 还需要 T5 tokenizer 和配置。运行脚本会通过 `HF_ENDPOINT=https://hf-mirror.com` 自动下载，也可以预先缓存：
+## 6. 下载模型
+
+将 Octo-Small 1.5 下载到文件架构中的模型目录：
 
 ```bash
-HF_ENDPOINT=https://hf-mirror.com python -c \
+mkdir -p "$WORKSPACE/models"
+
+MODEL_DIR="$WORKSPACE/models/octo-small-1.5" python -c \
+  "import os; from huggingface_hub import snapshot_download; snapshot_download(repo_id='rail-berkeley/octo-small-1.5', local_dir=os.environ['MODEL_DIR'])"
+```
+
+Octo 还需要 T5 tokenizer 和配置。首次运行时会自动缓存，也可以提前下载：
+
+```bash
+python -c \
   "from huggingface_hub import snapshot_download; snapshot_download(repo_id='t5-base', allow_patterns=['config.json','tokenizer_config.json','special_tokens_map.json','spiece.model','tokenizer.json'])"
 ```
 
-## 5. 本项目做了哪些适配
+模型目录应至少包含：
 
-### 5.1 本地模型加载
-
-`scripts/evaluate_octo_simpler.py` 不让 SimplerEnv 在线下载模型，而是执行：
-
-```python
-OctoModel.load_pretrained('/root/models/octo-small-1.5', step=300000)
+```text
+octo-small-1.5/
+├── config.json
+├── dataset_statistics.json
+├── example_batch.msgpack
+└── 300000/
+    └── default/
+        └── checkpoint
 ```
 
-因此模型下载完成后可以重复离线使用。
+## 7. 本项目的适配内容
 
-### 5.2 WidowX 与 Bridge 动作统计
+### 7.1 从本地文件架构加载模型
 
-策略适配器固定为：
+评估代码使用：
 
 ```python
-dataset_id='bridge_dataset'
-policy_setup='widowx_bridge'
+OctoModel.load_pretrained(checkpoint_path, step=300000)
 ```
 
-这会使用 Bridge 数据中的动作均值和标准差反归一化 Octo 输出，并执行以下转换：
+模型路径由 `--checkpoint` 提供。启动脚本默认使用工作目录中的 `models/octo-small-1.5`，也可以通过 `MODEL_DIR` 覆盖。
 
-- 三维末端位移直接映射为 `world_vector`。
-- 欧拉角旋转增量转换为 axis-angle `rot_axangle`。
-- Octo 的开合夹爪输出二值化为 WidowX 使用的 `-1/1` 命令。
+### 7.2 WidowX 动作适配
 
-### 5.3 SimplerEnv 与当前 Octo 的 pad mask 接口
+创建策略时使用：
 
-当前 SimplerEnv 的 `OctoInference` 传入旧字段 `pad_mask`，当前 Octo 的 `sample_actions` 接口需要 `timestep_pad_mask`。如果直接组合会出现：
+```python
+OctoInference(
+    model=model,
+    dataset_id="bridge_dataset",
+    policy_setup="widowx_bridge",
+)
+```
+
+这一设置完成以下处理：
+
+- 使用 `bridge_dataset` 的统计量反归一化动作。
+- 将平移输出映射为 `world_vector`。
+- 将欧拉角旋转增量转换为 axis-angle `rot_axangle`。
+- 将夹爪输出转换成 WidowX 环境使用的 `-1/1` 命令。
+
+### 7.3 SimplerEnv 与 Octo 接口适配
+
+当前 SimplerEnv 的 `OctoInference` 使用旧字段 `pad_mask`，当前 Octo 的 `sample_actions` 需要 `timestep_pad_mask`。直接组合会出现：
 
 ```text
 KeyError: 'timestep_pad_mask'
 ```
 
-本项目的 `SimplerOctoCompatibility` 包装器会移除旧字段，并通过 `timestep_pad_mask=` 参数传给 Octo。不要删除这个兼容层。
+`scripts/evaluate_octo_simpler.py` 中的 `SimplerOctoCompatibility` 会将 mask 作为 `timestep_pad_mask=` 参数传给 Octo。该兼容层是当前两个固定提交能够共同运行的必要部分。
 
-### 5.4 无显示器 Vulkan 渲染
+### 7.4 文件路径适配
 
-SAPIEN 需要 Vulkan 才能创建相机和场景。服务器没有桌面显示器，因此运行脚本会设置：
+`scripts/run_octo_simpler.sh` 会自动计算：
+
+- 项目目录；
+- SimplerEnv 源码目录；
+- Octo 源码目录；
+- Octo-Small 模型目录；
+- 当前 Python 的 NVIDIA 动态库目录。
+
+因此仓库可以放在任意工作目录中。需要特殊布局时使用 `WORKSPACE_DIR`、`SIMPLERENV_DIR`、`OCTO_DIR` 和 `MODEL_DIR` 显式指定。
+
+### 7.5 Vulkan 与 GPU 适配
+
+`config/nvidia_icd.json` 指向 `libGLX_nvidia.so.0`，用于让 SAPIEN renderer 选择 NVIDIA Vulkan 驱动。启动脚本同时设置：
 
 ```bash
-DISPLAY=""
-XDG_RUNTIME_DIR=/tmp/xdg-runtime-root
-VK_ICD_FILENAMES=/root/vlalora/config/nvidia_icd.json
+VK_ICD_FILENAMES="$PROJECT_DIR/config/nvidia_icd.json"
+JAX_PLATFORMS=cuda
+XLA_PYTHON_CLIENT_PREALLOCATE=false
 ```
 
-`config/nvidia_icd.json` 指向容器已有的 `libGLX_nvidia.so.0`，让 SAPIEN 使用 NVIDIA A16。
+不要将 `VK_ICD_FILENAMES` 指向 Mesa 的 `lvp_icd.x86_64.json`。当前 SAPIEN 版本与 llvmpipe renderer 不兼容。
 
-不要把 `VK_ICD_FILENAMES` 指向 `/usr/share/vulkan/icd.d/lvp_icd.x86_64.json`。llvmpipe 可以被 `vulkaninfo` 识别，但与当前 SAPIEN renderer 不兼容，会报错后 segmentation fault。
+## 8. 使用模型
 
-### 5.5 GPU 动态库路径
+### 8.1 默认运行一次
 
-运行脚本把 pip 安装的 cuDNN、cuBLAS、NVRTC 和系统 CUDA 加入 `LD_LIBRARY_PATH`。如果缺少这一步，JAX 会回退到 CPU，并显示：
+```bash
+cd "$WORKSPACE/vlalora"
+bash scripts/run_octo_simpler.sh
+```
+
+默认执行：
 
 ```text
-Found cuDNN version 0
-[CpuDevice(id=0)]
+checkpoint: models/octo-small-1.5
+checkpoint step: 300000
+task: widowx_spoon_on_towel
+episodes: 1
+seed: 0
+output: results/smoke_spoon
 ```
 
-正确配置后 JAX 使用 `cuda(id=0)`，TensorFlow 也能创建 NVIDIA A16 GPU device。
-
-## 6. 运行模型
-
-### 6.1 默认 smoke run
+### 8.2 运行 spoon-on-towel
 
 ```bash
-cd /root/vlalora
-git pull --ff-only
-bash scripts/run_cloud_once.sh
-```
+cd "$WORKSPACE/vlalora"
 
-不传参数时，脚本运行一次 `widowx_spoon_on_towel`，结果写入：
-
-```text
-/root/vlalora/results/smoke_spoon
-```
-
-### 6.2 自定义任务和回合数
-
-启动脚本现在会把命令行参数直接转发给 Python 评估程序，因此仍会自动配置 Vulkan、Hugging Face 镜像和 GPU 动态库。
-
-运行 10 回合 spoon-on-towel：
-
-```bash
-bash /root/vlalora/scripts/run_cloud_once.sh \
-  --checkpoint /root/models/octo-small-1.5 \
+bash scripts/run_octo_simpler.sh \
+  --checkpoint "$WORKSPACE/models/octo-small-1.5" \
   --checkpoint-step 300000 \
   --task widowx_spoon_on_towel \
   --episodes 10 \
   --seed 0 \
-  --output-dir /root/vlalora/results/base_spoon
+  --output-dir results/base_spoon
 ```
 
-运行 10 回合 eggplant-in-basket：
+### 8.3 运行 eggplant-in-basket
 
 ```bash
-bash /root/vlalora/scripts/run_cloud_once.sh \
-  --checkpoint /root/models/octo-small-1.5 \
+cd "$WORKSPACE/vlalora"
+
+bash scripts/run_octo_simpler.sh \
+  --checkpoint "$WORKSPACE/models/octo-small-1.5" \
   --checkpoint-step 300000 \
   --task widowx_put_eggplant_in_basket \
   --episodes 10 \
   --seed 0 \
-  --output-dir /root/vlalora/results/base_eggplant
+  --output-dir results/base_eggplant
 ```
 
-`--tf-memory-limit` 的默认值为 3072 MB。需要调整 TensorFlow 显存上限时追加，例如：
+`--tf-memory-limit` 默认值为 3072 MB，可以根据可用显存修改：
 
 ```bash
---tf-memory-limit 4096
+bash scripts/run_octo_simpler.sh \
+  --checkpoint "$WORKSPACE/models/octo-small-1.5" \
+  --task widowx_spoon_on_towel \
+  --episodes 1 \
+  --tf-memory-limit 4096 \
+  --output-dir results/smoke_4gb
 ```
 
-## 7. 输出文件
+## 9. 输出文件
 
-每个输出目录包含：
+每个评估目录包含：
 
 ```text
-episode_000_success_True.mp4       # 或 success_False
-episode_001_success_False.mp4
-episodes.jsonl                     # 每回合指令、成功状态、步数、耗时和场景信息
-summary.json                       # 总回合数、成功数和成功率
+results/example_run/
+├── episode_000_success_True.mp4
+├── episode_001_success_False.mp4
+├── episodes.jsonl
+└── summary.json
 ```
 
-一次完整运行结束并生成 `summary.json` 和 MP4，表示模型加载、Octo 推理、环境控制、Vulkan 渲染和视频编码链路已经跑通。单个随机回合的 `success: false` 表示机器人没有完成该回合任务，不表示程序运行失败。
+`episodes.jsonl` 记录每回合的：
 
-## 8. 已验证运行记录
+- 语言指令；
+- 是否成功；
+- 控制步数；
+- 运行时间；
+- 环境初始化信息；
+- SimplerEnv 的 episode statistics；
+- 视频路径。
 
-验证任务：
+`summary.json` 记录：
 
-```text
-task: widowx_spoon_on_towel
-instruction: put the spoon on the towel
-episodes: 1
-control_steps: 60
-elapsed_seconds: 85.435
-GPU: NVIDIA A16
-```
+- checkpoint 路径和 step；
+- 任务名称；
+- 总回合数；
+- 成功回合数；
+- 成功率；
+- 随机种子。
 
-该回合成功数为 0，但完整执行了 60 个控制步，并生成：
+生成 `summary.json`、`episodes.jsonl` 和 MP4 表示模型加载、策略推理、环境控制、渲染和视频保存流程已经完成。`success: false` 表示该回合没有完成任务，不代表程序执行失败。
 
-```text
-/root/vlalora/results/smoke_spoon/episode_000_success_False.mp4
-/root/vlalora/results/smoke_spoon/episodes.jsonl
-/root/vlalora/results/smoke_spoon/summary.json
-```
+## 10. 关键兼容问题
 
-## 9. 常见错误与对应处理
-
-| 现象 | 原因 | 本项目采用的处理 |
+| 现象 | 原因 | 处理方式 |
 | --- | --- | --- |
-| `git clone` 连接 GitHub 443 超时 | 云端无法直连 GitHub | 使用 `https://ghfast.top/https://github.com/...` |
-| NumPy 2.x 导致 TensorFlow/JAX 兼容问题 | 依赖解析自动升级 NumPy | 开始和结束都固定 `numpy==1.24.4` |
-| `cannot import name runtime_version from google.protobuf` | 最新 tensorflow-metadata 与 protobuf 版本不匹配 | 固定 `tensorflow-metadata==1.15.0`、`protobuf==3.20.3` |
-| `libvulkan.so.1` 不存在 | 没有 Vulkan loader | apt 安装 `libvulkan1` 和相关图形库 |
-| `enumeratePhysicalDevices: ErrorInitializationFailed` | 容器没有 NVIDIA ICD JSON | 使用仓库内 `config/nvidia_icd.json` |
-| Vulkan incompatible 后 segmentation fault | 错用了 Mesa llvmpipe | 使用 `libGLX_nvidia.so.0` 对应的 NVIDIA ICD |
-| JAX 只显示 CPU | 缺少 cuDNN 或动态库路径 | 安装 NVIDIA Python wheels，并通过启动脚本设置 `LD_LIBRARY_PATH` |
-| 无法访问 `huggingface.co/t5-base` | Hugging Face 主站不可达 | 设置 `HF_ENDPOINT=https://hf-mirror.com` |
-| `KeyError: timestep_pad_mask` | SimplerEnv 和 Octo API 版本不同 | 保留 `SimplerOctoCompatibility` 包装器 |
-| `GLFW error: X11: Failed to open display` | 无显示器服务器 | 这是 headless 模式的预期提示；后续出现 `Continue without GLFW` 即可 |
-| `Unable to register cuDNN/cuFFT/cuBLAS factory` | TensorFlow 组件重复注册日志 | 本次运行中为非致命日志，不影响后续 GPU 创建和推理 |
-| 提示缺少 `image_wrist`、`task_completed` 等 observation | Octo 检查点保存了更多训练模态 | 当前单主相机推理会跳过缺失的可选模态 |
+| NumPy 2.x 导致导入错误 | TensorFlow 2.15 和当前依赖组合不支持 NumPy 2.x | 固定 `numpy==1.24.4` |
+| `cannot import name runtime_version` | tensorflow-metadata 与 protobuf 不匹配 | 固定 metadata 1.15.0 和 protobuf 3.20.3 |
+| `libvulkan.so.1` 不存在 | 缺少 Vulkan loader | 安装 `libvulkan1` |
+| `enumeratePhysicalDevices` 失败 | Vulkan ICD 未指向 NVIDIA 驱动 | 使用 `config/nvidia_icd.json` |
+| Vulkan incompatible 或 segmentation fault | 使用了 llvmpipe | 使用 NVIDIA ICD，不使用 `lvp_icd` |
+| JAX 显示 `[CpuDevice(id=0)]` | cuDNN 未安装或动态库路径缺失 | 安装 NVIDIA wheels，并通过启动脚本设置路径 |
+| `KeyError: timestep_pad_mask` | SimplerEnv 与 Octo 接口版本不同 | 保留 `SimplerOctoCompatibility` |
+| 提示缺少 `image_wrist` 等 observation | 检查点包含额外训练模态 | 当前主相机推理会跳过未提供的可选模态 |
+| `GLFW: Failed to open display` | headless 渲染没有桌面窗口 | SAPIEN 继续使用 Vulkan 渲染时该提示不影响执行 |
 
-## 10. 合作者最短操作清单
+## 11. 合作者使用顺序
 
-已经配置好服务器后，合作者只需：
-
-```bash
-cd /root/vlalora
-git pull --ff-only
-bash scripts/run_cloud_once.sh
-```
-
-在新服务器上则按顺序完成：
-
-1. 安装 Vulkan/EGL/FFmpeg 系统包。
-2. 下载本项目、固定提交的 SimplerEnv 和 Octo。
-3. 按本文固定版本安装 NumPy、TensorFlow、JAX 和 Octo 依赖。
-4. 安装 cuDNN、cuBLAS 和 NVRTC Python wheels。
-5. 将 Octo-Small 1.5 下载到 `/root/models/octo-small-1.5`。
-6. 始终通过 `scripts/run_cloud_once.sh` 启动评估，使 GPU、Vulkan 和镜像设置自动生效。
+1. 按推荐文件架构下载 `vlalora`、`SimplerEnv`、`octo` 和 `dlimp`。
+2. 固定三个上游项目的提交号。
+3. 按本文版本安装 TensorFlow、JAX、Octo 和 SimplerEnv 依赖。
+4. 将 Octo-Small 1.5 放入 `models/octo-small-1.5`。
+5. 始终通过 `scripts/run_octo_simpler.sh` 启动，使路径、GPU 和 Vulkan 配置统一生效。
+6. 根据实验任务设置回合数、随机种子和结果目录。

@@ -2,6 +2,7 @@
 set -euo pipefail
 
 export DISPLAY=""
+export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
 export TOKENIZERS_PARALLELISM=false
 export XLA_PYTHON_CLIENT_PREALLOCATE=false
 export PYTHONPATH="/root/SimplerEnv:/root/octo:${PYTHONPATH:-}"

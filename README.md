@@ -14,6 +14,13 @@ SimplerEnv's WidowX visual-matching environment.
 
 ## Run one episode
 
+Install the CUDA runtime wheels used by JAX once in the default Miniconda
+environment:
+
+```bash
+python -m pip install --no-cache-dir nvidia-cudnn-cu12==8.9.7.29
+```
+
 ```bash
 cd /root/vlalora
 bash scripts/run_cloud_once.sh

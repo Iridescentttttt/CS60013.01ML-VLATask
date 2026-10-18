@@ -9,11 +9,11 @@ DATA_DIR="${DATA_DIR:-$WORKSPACE_DIR/data/bridge_course_subset}"
 cd "$PROJECT_DIR"
 python scripts/download_bridge_subset.py \
   --output-root "$DATA_DIR" \
-  --train-shards 20 \
-  --val-shards 4 \
+  --train-shards 60 \
+  --val-shards 12 \
   --seed 42 \
   --workers 4 \
-  --max-bytes 3000000000
+  --max-bytes 9000000000
 
 python scripts/inspect_bridge_subset.py \
   --data-dir "$DATA_DIR" \

@@ -453,16 +453,16 @@ results/example_run/
 
 ## 12. BridgeData V2 分片试验
 
-完整 BridgeData V2 RLDS 约 124GB。本项目先用种子 42 固定抽取 20 个训练分片和 4 个验证分片，并限制总下载量不超过 3GB：
+完整 BridgeData V2 RLDS 约 124GB。本项目用种子 42 固定抽取 60 个训练分片和 12 个验证分片，并限制总下载量不超过 9GB：
 
 ```bash
 cd "$WORKSPACE/vlalora"
 python scripts/download_bridge_subset.py \
   --output-root "$WORKSPACE/data/bridge_course_subset" \
-  --train-shards 20 \
-  --val-shards 4 \
+  --train-shards 60 \
+  --val-shards 12 \
   --seed 42 \
-  --max-bytes 3000000000
+  --max-bytes 9000000000
 ```
 
 分片来源编号保存在：
@@ -479,7 +479,7 @@ python scripts/inspect_bridge_subset.py \
   --output-dir artifacts/data_report
 ```
 
-当前固定分片的实际结果为 1,252 条轨迹、46,479 个时间步。语言筛选得到 188 条训练轨迹（85 条表面放置、103 条容器放置）和 48 条验证轨迹（19 条、29 条）。其余 1,016 条轨迹只保留在下载试验中，不进入动作头训练。
+当前固定分片实际占用 7.756GiB，包含 3,756 条轨迹、141,289 个时间步。语言筛选得到 548 条训练轨迹（249 条表面放置、299 条容器放置）和 128 条验证轨迹（54 条、74 条）。其中人工复核得到 12 条 T1 直接训练轨迹和 3 条 T1 直接验证轨迹；仍未发现完整的 `eggplant → basket` T2 轨迹，因此当前 T2 依靠茄子进入其他容器和其他物体进入篮子的组合泛化。
 
 ## 13. 动作头微调
 

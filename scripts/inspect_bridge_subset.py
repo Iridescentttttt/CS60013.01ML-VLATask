@@ -12,7 +12,10 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
-from scripts.bridge_filters import classify_instruction
+try:
+    from scripts.bridge_filters import classify_instruction
+except ModuleNotFoundError:
+    from bridge_filters import classify_instruction
 
 
 def parse_args() -> argparse.Namespace:

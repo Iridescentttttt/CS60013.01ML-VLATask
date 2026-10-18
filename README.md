@@ -492,6 +492,17 @@ SAVE_DIR="$WORKSPACE/checkpoints" \
 bash scripts/run_finetune.sh
 ```
 
+第一次运行先执行两步训练链路测试：
+
+```bash
+DATA_DIR="$WORKSPACE/data/bridge_course_subset" \
+MODEL_DIR="$WORKSPACE/models/octo-small-1.5" \
+SAVE_DIR="$WORKSPACE/checkpoints_smoke" \
+bash scripts/run_train_smoke.sh
+```
+
+该命令生成 step 2 checkpoint 并跳过耗时的验证可视化。通过后再执行上面的正式 10,000 步命令。
+
 统计总参数、冻结参数和可训练参数：
 
 ```bash

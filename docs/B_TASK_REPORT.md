@@ -134,9 +134,15 @@ action_normalization_mask = [True, True, True, True, True, True, False]
 | 验证间隔 | 1,000 steps |
 | 保存间隔 | 2,000 steps |
 
-图像增强包括随机裁剪、亮度、对比度、饱和度和色调变化。训练日志使用 W&B offline 模式保存，不向外部服务发送实验数据；同时把训练 loss、验证 loss、学习率和梯度范数镜像到便于提交的 `logs/train_metrics.jsonl`。
+图像增强包括随机裁剪、亮度、对比度、饱和度和色调变化。训练日志使用 W&B offline 模式保存，不向外部服务发送实验数据；终端日志同时保存到 `logs/train_head_only.log`。
 
 候选 checkpoint 为 2k、4k、6k、8k、10k。Final 选择规则预先确定为：选择验证集扩散动作损失最低的 checkpoint；若差异很小则选择更早的 checkpoint。正式 SimplerEnv 结果不得用于选择 Final。
+
+### 6.1 已完成的训练链路测试
+
+2026-10-18 在单张 NVIDIA A16 上完成了 2 个 optimizer step 的冒烟测试。测试覆盖模型载入、RLDS 读取、任务筛选、图像变换、前向与反向传播以及 Orbax checkpoint 保存。Octo 统计缓存确认目标数据为 236 条轨迹、7,618 个动作时间步。第 2 步结果为 loss/MSE 1.48953、gradient norm 46.58239、update norm 0.09209；step 2 checkpoint 约 1.1GiB。
+
+冒烟测试通过 `scripts/run_train_smoke.sh` 运行。该命令将验证间隔设为 999，只验证核心训练链路；正式的 10,000 步命令仍按每 1,000 步验证并运行 Octo 动作采样可视化。结构化记录见 `artifacts/training_smoke/summary.json`。
 
 ## 7. 正式评测协议
 

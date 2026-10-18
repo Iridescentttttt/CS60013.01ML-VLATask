@@ -6,5 +6,6 @@ results/
 checkpoints/
 videos/
 wandb/
+logs/
 data/
 *.partial

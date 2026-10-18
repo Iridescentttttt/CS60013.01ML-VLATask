@@ -9,16 +9,14 @@ MODEL_DIR="${MODEL_DIR:-$WORKSPACE_DIR/models/octo-small-1.5}"
 DATA_DIR="${DATA_DIR:-$WORKSPACE_DIR/data/bridge_course_subset}"
 SAVE_DIR="${SAVE_DIR:-$WORKSPACE_DIR/checkpoints}"
 
-export PYTHONPATH="$PROJECT_DIR/training_hooks:$PROJECT_DIR:$OCTO_DIR:${PYTHONPATH:-}"
+export PYTHONPATH="$PROJECT_DIR:$OCTO_DIR:${PYTHONPATH:-}"
 export TOKENIZERS_PARALLELISM=false
 export HF_HUB_OFFLINE="${HF_HUB_OFFLINE:-1}"
 export TRANSFORMERS_OFFLINE="${TRANSFORMERS_OFFLINE:-1}"
 export XLA_PYTHON_CLIENT_PREALLOCATE=false
 export WANDB_MODE=offline
-export OCTO_JSONL_LOG="${OCTO_JSONL_LOG:-$PROJECT_DIR/logs/train_metrics.jsonl}"
 
 mkdir -p "$PROJECT_DIR/logs" "$SAVE_DIR"
-rm -f "$OCTO_JSONL_LOG"
 cd "$PROJECT_DIR"
 
 python "$OCTO_DIR/scripts/finetune.py" \

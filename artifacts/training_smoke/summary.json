@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-18",
+  "status": "passed",
+  "model": "octo-small-1.5 step 300000",
+  "mode": "head_only,language_conditioned",
+  "dataset": "BridgeData V2 fixed 24-shard subset",
+  "filtered_trajectories_all_splits": 236,
+  "filtered_transitions_all_splits": 7618,
+  "steps": 2,
+  "batch_size": 2,
+  "trainable_parameters": 1703564,
+  "frozen_parameters": 134967040,
+  "step_2": {
+    "loss": 1.48953,
+    "mse": 1.48953,
+    "learning_rate": 0.0001,
+    "gradient_norm": 46.58239,
+    "parameter_norm": 59.42371,
+    "update_norm": 0.09209
+  },
+  "checkpoint_step": 2,
+  "checkpoint_size_gib_approx": 1.1,
+  "checkpoint_example": "/root/checkpoints_smoke/octo_finetune/task_b/task_b_bridge_head_20261018_165755/2",
+  "notes": "Core training smoke test only. Formal validation and SimplerEnv evaluation are separate commands."
+}

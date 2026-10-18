@@ -2,6 +2,8 @@
 
 本项目提供 Octo-Small 1.5 在 SimplerEnv WidowX 任务中的推理与评估代码。项目从本地模型目录加载检查点，通过兼容层连接 Octo 与 SimplerEnv，执行视觉语言控制策略，并输出逐回合记录、成功率汇总和视频。
 
+课程 B 类的模型依据、BridgeData V2 分片方案、轻量微调设计和正式评测协议见 [`docs/B_TASK_REPORT.md`](docs/B_TASK_REPORT.md)。
+
 ## 1. 方案说明
 
 | 项目 | 当前选择 |
@@ -230,6 +232,14 @@ wandb
 
 需要进行微调时，再为训练代码建立相应的依赖组合。
 
+本项目的训练脚本使用 W&B 离线日志。当前 TensorFlow/Protobuf 组合对应：
+
+```bash
+python -m pip install wandb==0.16.6
+```
+
+不要安装 `wandb==0.28.0`；它与这里固定的 `protobuf==3.20.3` 组合无法正常导入。
+
 ## 6. 下载模型
 
 将 Octo-Small 1.5 下载到文件架构中的模型目录：
@@ -439,3 +449,66 @@ results/example_run/
 4. 将 Octo-Small 1.5 放入 `models/octo-small-1.5`。
 5. 始终通过 `scripts/run_octo_simpler.sh` 启动，使路径、GPU 和 Vulkan 配置统一生效。
 6. 根据实验任务设置回合数、随机种子和结果目录。
+
+## 12. BridgeData V2 分片试验
+
+完整 BridgeData V2 RLDS 约 124GB。本项目先用种子 42 固定抽取 20 个训练分片和 4 个验证分片，并限制总下载量不超过 3GB：
+
+```bash
+cd "$WORKSPACE/vlalora"
+python scripts/download_bridge_subset.py \
+  --output-root "$WORKSPACE/data/bridge_course_subset" \
+  --train-shards 20 \
+  --val-shards 4 \
+  --seed 42 \
+  --max-bytes 3000000000
+```
+
+分片来源编号保存在：
+
+```text
+$WORKSPACE/data/bridge_course_subset/bridge_dataset/1.0.0/subset_manifest.json
+```
+
+生成语言清单、类别统计和课程要求的图像/指令/动作样本：
+
+```bash
+python scripts/inspect_bridge_subset.py \
+  --data-dir "$WORKSPACE/data/bridge_course_subset" \
+  --output-dir artifacts/data_report
+```
+
+## 13. 动作头微调
+
+训练配置为 `head_only,language_conditioned`，冻结 `octo_transformer.*`，使用两帧历史和四步动作分块：
+
+```bash
+DATA_DIR="$WORKSPACE/data/bridge_course_subset" \
+MODEL_DIR="$WORKSPACE/models/octo-small-1.5" \
+SAVE_DIR="$WORKSPACE/checkpoints" \
+bash scripts/run_finetune.sh
+```
+
+统计总参数、冻结参数和可训练参数：
+
+```bash
+python scripts/count_trainable_params.py \
+  --checkpoint "$WORKSPACE/models/octo-small-1.5" \
+  --checkpoint-step 300000
+```
+
+## 14. B 类正式评测
+
+Final 根据验证损失确定后，设置其目录和 step。脚本会分别启动 Base 和 Final，在两个任务上各运行 10 次：
+
+```bash
+FINAL_MODEL_DIR="$WORKSPACE/checkpoints/<selected-run>" \
+FINAL_STEP=8000 \
+bash scripts/run_b_eval.sh
+
+python scripts/summarize_b_results.py \
+  --results-dir results/formal \
+  --output-dir artifacts/results
+```
+
+固定的正式初始状态在 `config/eval_states_b.json`。Base 与 Final 使用相同环境 seed、模型 seed 规则、5Hz 控制频率和 60 步上限。

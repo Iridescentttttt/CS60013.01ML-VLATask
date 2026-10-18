@@ -115,6 +115,8 @@ action_normalization_mask = [True, True, True, True, True, True, False]
 
 本项目使用 Octo 官方的 `head_only,language_conditioned` 模式。冻结规则为 `octo_transformer.*`，训练扩散动作头及其非冻结参数。该设置实际更新可学习参数，符合课程对动作头或其他轻量模块的要求。
 
+对 Base checkpoint 的实际参数树统计结果为：总参数 136,670,604，其中冻结 134,967,040，可训练 1,703,564，占 1.2465%。总数包含冻结的语言编码相关参数，因此高于模型卡用于描述 Octo-Small Transformer 主体的 27M。
+
 初始训练配置：
 
 | 参数 | 数值 |

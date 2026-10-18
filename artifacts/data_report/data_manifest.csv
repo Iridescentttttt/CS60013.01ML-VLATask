@@ -1,0 +1,1253 @@
+﻿split,episode_index,category,instruction,steps
+train,0,other,close low fridge,30
+train,1,other,close large4fbox flaps,22
+train,2,other,put the blue cloth between the two cans and the banana,22
+train,3,other,Move the fish to the left of the spoon.,35
+train,4,other,folds the cloth from bottom left to top right,29
+train,5,other,,31
+train,6,in_container,take the spoon from the left bottom burner and put it in the cooking pot,58
+train,7,in_container,put cup into pot or pan,23
+train,8,in_container,flip pot upright in sink,22
+train,9,on_surface,picked a red spoon and placed it on top of an orange cloth,32
+train,10,other,lever vertical to front,23
+train,11,in_container,put pear in bowl,32
+train,12,other,move the green cloth to the top right of the kitchen,37
+train,13,other,The red thing moved from cloth to table,34
+train,14,on_surface,Put the metal pot on the purple cloth.,33
+train,15,other,take spatula off plate sink,26
+train,16,on_surface,Place the yellow brush on top of the yellow towel,36
+train,17,other,,49
+train,18,other,,31
+train,19,other,take carrot off plate,38
+train,20,other,zip zipper bag,23
+train,21,other,end effector transition from object to pot or pan,18
+train,22,other,end effector reaching knife,18
+train,23,other,,28
+train,24,other,moved the can to the near silver pot,30
+train,25,other,unfold the cloth from bottom to top,48
+train,26,other,Put the brush on top of the napkin.,28
+train,27,other,Stack the cube on top of the other,41
+train,28,in_container,put croissant inside silver bowl,33
+train,29,other,,34
+train,30,other,,35
+train,31,other,,34
+train,32,in_container,put eggplant into pot or pan,23
+train,33,other,,33
+train,34,other,fold cloth in half,23
+train,35,in_container,put spoon in pot,23
+train,36,other,picked up the brush and place it below the orange clothe,32
+train,37,other,fold the cloth from bottom right to top left,48
+train,38,other,open the drawer,30
+train,39,other,Put the spoon on the orange rectangle.,44
+train,40,other,,49
+train,41,other,took the silver lid from the right burner and put on left burner,29
+train,42,other,,28
+train,43,other,,49
+train,44,other,put knife on cutting board,23
+train,45,other,put the yellow cloth in the washing machine,47
+train,46,on_surface,Place the strawberry on the far right edge of the table,35
+train,47,on_surface,take the lid and place it on the left side of the table,37
+train,48,other,,49
+train,49,other,,38
+train,50,other,moved the small tin from the Centre of the table to the left side,43
+train,51,other,Slide the silver pot forward so that it's between the stove knobs and the chicken wing.,26
+train,52,other,fold cloth from top tp bottom,33
+train,53,other,put small spoon from basket to tray,28
+train,54,other,,49
+train,55,other,close the drawer,29
+train,56,in_container,flip pot upright which is in sink,20
+train,57,other,Put a corn on the burner.,19
+train,58,other,turn lever vertical to front,23
+train,59,other,take broccoli out of pan,38
+train,60,other,pick up violet Allen key,22
+train,61,other,move the cloth to the left of the stove,28
+train,62,other,,34
+train,63,other,Rotate a green arch 90 degrees anticlockwise,48
+train,64,other,move the silver pot to the right side of the blue cloth,27
+train,65,in_container,put carrot in pot cardboard fence,32
+train,66,in_container,Pick up the pot and place it in front of the blue cloth,45
+train,67,other,,42
+train,68,other,sweep into pile,58
+train,69,other,put a tomato from the orange pot to the silver basket,54
+train,70,in_container,put pot or pan on stove and put potato in pot or pan,61
+train,71,other,moved the blue cloth to the lower left corner,52
+train,72,other,move red object to the lower left,44
+train,73,other,,48
+train,74,in_container,put banana in pot cardboard fence,30
+train,75,other,,49
+train,76,other,close fridge,36
+train,77,other,,33
+train,78,other,take out the drawer,22
+train,79,other,,23
+train,80,other,,49
+train,81,other,put a ring on a cylinder,33
+train,82,other,,28
+train,83,other,move the silver pot to the top right stove,37
+train,84,other,,37
+train,85,other,put the cylinder block on top of the red hexagon block,41
+train,86,in_container,put corn in pan which is on stove,18
+train,87,other,,20
+train,88,other,,49
+train,89,other,,49
+train,90,in_container,put the salmon into the red pot,51
+train,91,other,close drawer of box,16
+train,92,other,put detergent in sink,28
+train,93,other,place the silver lid on the silver pot,48
+train,94,other,take blueberries off plate sink,34
+train,95,other,,31
+train,96,other,put cup from counter to sink,23
+train,97,other,Fold the cloth from top right to bottom left to cover the yellow figure,35
+train,98,in_container,put pan from drying rack into sink,23
+train,99,other,close microwave,37
+train,100,other,,49
+train,101,in_container,put potato in pot cardboard fence,29
+train,102,other,put the green block on top of the yellow block,33
+train,103,other,fold cloth from the top left to the bottom right,31
+train,104,other,,49
+train,105,other,move the red thing in the middle of the spoon and red box to upper left part of the table,36
+train,106,in_container,put eggplant in pot or pan,23
+train,107,other,pick up violet Allen key,22
+train,108,other,,34
+train,109,other,fold the clothe from bottom right to left,47
+train,110,other,open microwave,38
+train,111,other,Take the white thing and put it in the drawer.,47
+train,112,in_container,put cup into pot or pan,21
+train,113,other,,49
+train,114,other,Pick up the napkin and put it in front of the two cans.,25
+train,115,in_container,move the silver pot in between the burners,46
+train,116,on_surface,Pick up the corn from the pot and place on the purple towel,37
+train,117,other,put pot or pan on stove,23
+train,118,other,,49
+train,119,other,Removed the object from the drawer,48
+train,120,other,Move the pot to the right of the red bell pepper,46
+train,121,other,get the red figure from the top left,48
+train,122,other,,38
+train,123,other,unfold the cloth from bottom right to top left,48
+train,124,other,put the orange lid on the orange pot,38
+train,125,on_surface,pick the hot dog from vessel and place it on middle of the table,41
+train,126,on_surface,move the blue cloth on top of the stove,32
+train,127,other,Move pot to space between blue cloth and cans.,29
+train,128,other,fold the cloth from the upper right to bottom left,43
+train,129,in_container,the pig  rabbit was carried and put inside the pot.,34
+train,130,other,7210-2199-5955-2055-534,33
+train,131,other,move towel to front middle table edge,26
+train,132,other,put knife on cutting board,23
+train,133,other,take sushi out of pot cardboard fence,37
+train,134,other,move the yellow cloth to the left burner,39
+train,135,other,Place the red fork to the left of the silver pot.,48
+train,136,other,,32
+train,137,on_surface,put potato on plate,23
+train,138,other,,35
+train,139,other,turn lever vertical to front,18
+train,140,other,,32
+train,141,other,,49
+train,142,other,put the green thing to the right bottom of the table,27
+train,143,other,put cup from drying rack to sink,23
+train,144,other,,44
+train,145,other,,49
+train,146,other,fold cloth from bottom to top,42
+train,147,other,,40
+train,148,other,,46
+train,149,other,put the silver bowl on the left burner,46
+train,150,other,move the croissant above the blue cloth,34
+train,151,other,take the orange cloth to cover the bowl,36
+train,152,in_container,put pot in sink,19
+train,153,other,,32
+train,154,other,move the towel between the croissant and the pot.,24
+train,155,other,,36
+train,156,other,fold the cloth from  the right bottom to left top,28
+train,157,other,,24
+train,158,in_container,Take the orange carrot and put it in the stainless steel pan,37
+train,159,other,,49
+train,160,other,,34
+train,161,other,,49
+train,162,in_container,put cup from counter or drying rack into sink,18
+train,163,other,turn faucet left,23
+train,164,other,,41
+train,165,other,,49
+train,166,other,move the yellow cloth to the bottom left corner of the burner,33
+train,167,other,put lid on pot or pan,28
+train,168,other,Place the cucumber on the front right edge of the stove,24
+train,169,other,take bowl off plate cardboard fence,31
+train,170,other,open microwave,38
+train,171,other,unfold left top and right top,33
+train,172,other,unzip zipper bag,23
+train,173,on_surface,picked the can and place it on the middle of the table,40
+train,174,other,,34
+train,175,other,Move the yellow cloth to near the red bowl.,31
+train,176,other,,49
+train,177,in_container,put pot or pan in sink,21
+train,178,other,Move the cylinder from the block with hole to the table,48
+train,179,other,take the toy out of the drawer,27
+train,180,other,put the pink toy on the top of the drawer,23
+train,181,other,,49
+train,182,other,,49
+train,183,other,take carrot off plate,38
+train,184,other,,48
+train,185,other,,49
+train,186,other,open the drawer,34
+train,187,other,Remove the yellow block in the middle and palce it on the right side,43
+train,188,other,,21
+train,189,in_container,put pepper in pot or pan,18
+train,190,in_container,put spoon into pan,23
+train,191,other,close large4fbox flaps,23
+train,192,on_surface,Move the loaf on the table cloth.,48
+train,193,other,move the spoon to the right corner,26
+train,194,other,wipe pot with sponge,23
+train,195,other,,40
+train,196,other,,49
+train,197,other,PLACE THE MUSHROOM VERTICALLOY IN FRONT OF THE ONEN.,27
+train,198,in_container,flip pot upright in sink,22
+train,199,other,,49
+train,200,in_container,put the blue spoon in the silver pot,39
+train,201,other,place the blue cube on top of the green cube,48
+train,202,other,move the blue cloth to the top left of the stove,30
+train,203,other,move the blue spoon from the upper left to the lower right of the stove.,31
+train,204,other,pick up violet Allen key,18
+train,205,other,,38
+train,206,other,Move red item towards bottom right corner of counter.,30
+train,207,other,close oven,26
+train,208,other,,49
+train,209,other,poner el tenedor en la olla anaranjada,41
+train,210,other,close the drawer,48
+train,211,other,move the can to the top left of the table,23
+train,212,other,put detergent from sink into drying rack,20
+train,213,other,fold the cloth from bottom left to top right,33
+train,214,other,pick up green mug,28
+train,215,other,fold the cloth from left to right,37
+train,216,other,,38
+train,217,other,,49
+train,218,other,place the spatula in the right side of the sink,53
+train,219,other,Move the pot from edge to corner of the table.,48
+train,220,on_surface,put sushi on plate,23
+train,221,other,,49
+train,222,other,move the yellow rectangle block to the left,48
+train,223,other,,49
+train,224,on_surface,Place the orange and whtie object onto the cloth.,46
+train,225,other,,29
+train,226,other,open microwave,32
+train,227,other,,49
+train,228,other,,23
+train,229,other,,49
+train,230,other,sweep into pile,79
+train,231,other,Place the mushroom to the left of the metal pot.,29
+train,232,other,,40
+train,233,other,unfold the cloth from bottom right to top left,41
+train,234,in_container,put the carrot in the silver pot,28
+train,235,in_container,put strawberry in pot or pan an put pot or pan on stove,58
+train,236,other,open cabinet,31
+train,237,other,put the brown object inside the drawer,43
+train,238,other,turn lever vertical to front,23
+train,239,other,put pot or pan on stove,21
+train,240,other,Place the orange pot on the left burner,44
+train,241,other,move the blue cloth in between the two burners,21
+train,242,other,pick the blue spoon near red spoon and keep it next to the table,48
+train,243,other,open book,23
+train,244,other,Move the mushroom to the front left corner of the table,36
+train,245,other,fold the cloth from bottom right to top left,39
+train,246,other,Moved the green object to the right top corner of the burner,40
+train,247,other,end effector reaching salmon,18
+train,248,other,,49
+train,249,other,sweep into pile,91
+train,250,in_container,put pot or pan on stove and put stuffedduck in pot or pan,54
+train,251,in_container,put pear in bowl,30
+train,252,other,pick up blue pen and put into drawer,22
+train,253,other,fold the cloth from bottom left to top right,32
+train,254,other,pick the violet object and put it in the drawer,48
+train,255,other,close microwave,38
+train,256,in_container,put the red chili pepper into the silver pot at the top of the stove,53
+train,257,other,move the red triangle to the left,43
+train,258,other,put lid on pot,38
+train,259,in_container,put carrot in pot cardboard fence,27
+train,260,other,,27
+train,261,other,move the yellow cloth to the bottom right corner of the table,53
+train,262,other,,46
+train,263,other,take cucumber out of cup,38
+train,264,in_container,put potato in pot cardboard fence,34
+train,265,other,,46
+train,266,other,,49
+train,267,other,fold the cloth top right to the bottom left,35
+train,268,other,picking the yellow block puting it to the right,37
+train,269,other,Move cloth from top left of the machine to the bottom right,24
+train,270,other,move the orange cloth to the right side of the floor,24
+train,271,other,,34
+train,272,other,,48
+train,273,other,,37
+train,274,other,,50
+train,275,on_surface,put lemon on plate,28
+train,276,other,,49
+train,277,on_surface,put lemon on plate,26
+train,278,on_surface,Pick the yellow fruit and put it on the green towel,36
+train,279,in_container,put the corn inside the silver pot,31
+train,280,on_surface,put blueberries on plate sink,36
+train,281,other,take lid off pot,38
+train,282,other,sweep into pile,98
+train,283,other,Take the clothes and cocer the soap,39
+train,284,other,move the black object to the middle part of the table,33
+train,285,other,,31
+train,286,other,,49
+train,287,other,put cap on container,23
+train,288,in_container,put pear in bowl,26
+train,289,other,put lid on pot or pan,24
+train,290,in_container,flip pot upright in sink,23
+train,291,other,lift the yellow knife,48
+train,292,other,,50
+train,293,other,move the blue rag on the wooden platform,41
+train,294,on_surface,put carrot on plate,38
+train,295,other,,49
+train,296,other,,31
+train,297,other,take green block from blue block,37
+train,298,other,,49
+train,299,other,move the broccoli to the bottom side of the table,24
+train,300,other,put the silver pot on the right side of the silver pot cover,28
+train,301,other,pick up pan from stove,15
+train,302,other,,49
+train,303,other,move the white sponge to the upper side of the left burner,40
+train,304,other,put fork from basket to tray,28
+train,305,other,,49
+train,306,other,,49
+train,307,other,put the silver pot on the upper left side of the left burner,34
+train,308,other,lever vertical to front,23
+train,309,other,,24
+train,310,other,close microwave,36
+train,311,other,,49
+train,312,other,move the red fork to the left side of the stove,48
+train,313,other,move the can to the lower right of the table,26
+train,314,other,place  the yellow spoon vertically beside the can,42
+train,315,other,unfold the cloth from right to left,37
+train,316,in_container,put potato in pot cardboard fence,34
+train,317,other,,49
+train,318,other,take the eggplant and put it between the two right bumers,51
+train,319,other,turn faucet right,23
+train,320,in_container,put the blue and violet towels inside the white basket,39
+train,321,other,moving the object from the ground to table,32
+train,322,other,unfold the cloth from right to left,37
+train,323,other,Move the pot to the back left of the table.,37
+train,324,other,,49
+train,325,other,the robot spread out the cloth,27
+train,326,other,,49
+train,327,other,Remove the blue figure from the top edge of the cloth,31
+train,328,other,move the orange cloth to the right of the yellow brush,26
+train,329,other,put the blue cloth in the washer,38
+train,330,other,take lid off pot,38
+train,331,in_container,put sweet potato in pot which is in sink,18
+train,332,on_surface,put the bowl onto the orange cloth,44
+train,333,other,,49
+train,334,other,open the drawer,34
+train,335,other,PICK UP THE BLENDER AND PUT ANOTHER SIDE OF THE TABLE,35
+train,336,other,fold the cloth from bottom left to top right,36
+train,337,on_surface,Take the white napkin and put it on the middle of the table,22
+train,338,other,,49
+train,339,other,Move the spatula to the front edge of the table,46
+train,340,on_surface,put bowl on plate cardboard fence,31
+train,341,in_container,put corn in pan which is on stove,21
+train,342,other,move the blue brush to the lower left of the burner,43
+train,343,in_container,put potato in pot cardboard fence,29
+train,344,in_container,put sushi in pot cardboard fence,31
+train,345,other,fold the cloth from bottom right to top left,31
+train,346,other,,49
+train,347,other,put lid on pot,38
+train,348,in_container,Pick up chicken leg inside of pot and place to the left.,43
+train,349,other,Unfold the cloth from top to bottom,39
+train,350,other,move the yellow bottle below green cloth,27
+train,351,in_container,put eggplant into pot or pan,22
+train,352,other,Pick up the fork and move it to the bottom left side of the counter.,48
+train,353,other,open brown1fbox flap,21
+train,354,other,close oven,28
+train,355,other,put the yellow duck in the drawer,41
+train,356,other,,25
+train,357,other,unfold the cloth from bottom right to top left,39
+train,358,other,sweep into pile,98
+train,359,other,,31
+train,360,other,move the silver pot to the left burner,40
+train,361,on_surface,put crackerbox on plate and spatula in pot or pan on stove,66
+train,362,other,,49
+train,363,other,open the drawer and move,48
+train,364,other,flip cup upright,23
+train,365,other,open the drawer,23
+train,366,other,Move the yellow cloth to the left of the blue fork,39
+train,367,other,,28
+train,368,other,open the drawer,37
+train,369,other,move the yellow cube and put it on top of the cylinder,48
+train,370,other,unfold the cloth from left to right,35
+train,371,on_surface,PICK UP THE BANANA AND PUT ON THE ANOTHER SIDE OF THE TABLE,38
+train,372,other,,48
+train,373,other,put clothes in laundry machine,38
+train,374,other,,48
+train,375,other,,49
+train,376,other,move the red pepper to left side of the buner,37
+train,377,other,,38
+train,378,other,,24
+train,379,other,move the blue spatula to the left top corner of the burner,48
+train,380,other,move the strawberry to the bottom middle of the table,28
+train,381,other,sweep into pile,82
+train,382,other,,41
+train,383,other,put the red triangle on top of the plus,45
+train,384,on_surface,put spatula on plate sink,31
+train,385,other,move the pot to the bottom left corner of the table,41
+train,386,other,,50
+train,387,other,remove the red block from the top of the tower and put it on the yellow tower,45
+train,388,other,,44
+train,389,other,Move the spoon to the back left corner of the table,41
+train,390,other,fold cloth from the top right to the bottom left,46
+train,391,in_container,put carrot in pot cardboard fence,28
+train,392,other,put carrot on cutting board,22
+train,393,in_container,Put the potato in the cloth,31
+train,394,other,open fridge,38
+train,395,other,Slide the purple rag away from the blue brush.,30
+train,396,other,Close the drawer,31
+train,397,other,Move the spoon to the right table edge away from the towel.,36
+train,398,other,,49
+train,399,other,Put the cheese inside the drawer,48
+train,400,in_container,put pot in sink,19
+train,401,other,getting the thing in the drawer and putting it in the table,30
+train,402,other,,50
+train,403,other,push the tin to the right side of the table,35
+train,404,other,took the blue fork and placed it on the right burner,44
+train,405,other,,12
+train,406,other,fold the cloth from right to left,38
+train,407,other,end effector reaching stuffedrabbit,18
+train,408,other,Pick up the cube and place it on the right of the red fork,47
+train,409,on_surface,put carrot on plate,38
+train,410,other,unfold the cloth from top right to bottom left,41
+train,411,other,move green spatula to right side of table,45
+train,412,other,upright hot sauce bottle cardboard fence,38
+train,413,in_container,put spatula in pan,23
+train,414,other,,49
+train,415,other,,25
+train,416,other,move the red cube from the top of the tower and put it beside the cylinder.,48
+train,417,on_surface,put carrot on plate,38
+train,418,in_container,put pot or pan on stove and put mushroom in pot or pan,78
+train,419,in_container,put pot or pan from sink into drying rack,23
+train,420,other,move the lid to the bottom left of the table,37
+train,421,other,moved the pot lid on the pot,40
+train,422,on_surface,put fry on plate and smallpear in pot or pan on stove,60
+train,423,other,open the drawer,40
+train,424,other,The yellow object was taken and transferred to the other side.,53
+train,425,in_container,put broccoli in pot,38
+train,426,on_surface,put carrot on plate,23
+train,427,other,open the drawer,22
+train,428,other,move the metallic can to the left center of the burner,43
+train,429,other,,47
+train,430,other,,49
+train,431,other,,49
+train,432,other,,40
+train,433,in_container,flip pot upright in sink,22
+train,434,other,turn lever vertical to front,21
+train,435,other,,49
+train,436,other,,49
+train,437,other,move the corn to the left of the counter,30
+train,438,other,"Put the green cube on top of the arch, bedside the yellow cube",48
+train,439,other,,49
+train,440,other,open fridge,38
+train,441,other,take the eggplant and put it between the two right burners,48
+train,442,other,Move the yellow towel in front of the red can,29
+train,443,other,drop a can and make it go straight to the left side of the table,18
+train,444,other,,22
+train,445,other,Move the knife from left side to right side,46
+train,446,other,put lid on pot or pan,28
+train,447,other,put the red cube on top of white cube,38
+train,448,other,pick vessel from orange cloth and move it diagonally,34
+train,449,other,,49
+train,450,other,,31
+train,451,other,,49
+train,452,in_container,Take the green vegetable from the pot and place it in the right bottom of the table.,39
+train,453,other,put the yellow block on top of the blue block,48
+train,454,other,putting yellow object in the drawer,43
+train,455,other,,49
+train,456,other,,49
+train,457,other,turn lever vertical to front,16
+train,458,on_surface,take the green cube and put it on the right side of the table,48
+train,459,on_surface,put the blue spoon on the top of the green cloth,30
+train,460,other,Place the chick near the cloth.,45
+train,461,other,,49
+train,462,other,,49
+train,463,other,,49
+train,464,other,,49
+train,465,on_surface,take the orange object on top of the drawer and put it on the bottom right side of the table,38
+train,466,other,,37
+train,467,other,put the knife in the right side of the sink,58
+train,468,other,,49
+train,469,on_surface,put eggplant on plate,23
+train,470,other,,49
+train,471,other,take the object from the table and placed it in the drawer.,36
+train,472,in_container,put spoon in bowl sink,27
+train,473,other,,49
+train,474,other,Move the bowl from the towel to the other side of the blue brush.,46
+train,475,other,put cup from sink to drying rack,23
+train,476,other,,38
+train,477,other,end effector reaching pot or pan,18
+train,478,other,Move the cloth to the top left corner of the table.,37
+train,479,on_surface,put cup on plate,38
+train,480,on_surface,put sushi on plate,28
+train,481,other,,38
+train,482,other,take cup off plate,34
+train,483,other,Moves the orange tool to the upper left of the table.,39
+train,484,other,,32
+train,485,other,place the yellow object on top of the drawer,28
+train,486,on_surface,Take out the cheese and put it on the orange cloth.,40
+train,487,in_container,put broccoli in pot or pan,25
+train,488,other,,34
+train,489,other,move the blue cloth to the bottom of the table,26
+train,490,in_container,move the blue cup into the yellow tray,58
+train,491,other,Move the spoon to the left of the towel,43
+train,492,other,déplacez le bloc rectangulaire vers la gauche du table,48
+train,493,other,,45
+train,494,other,sweep into pile,98
+train,495,other,take carrot off plate,38
+train,496,other,Fold the cloth from right to left,36
+train,497,other,put banana in colander,30
+train,498,other,move the red object to the right side of the table just beside the drawer,23
+train,499,other,move the red mango into the drawer,34
+train,500,in_container,open the pot and put the lid in the right side of the table,32
+train,501,other,,49
+train,502,on_surface,Place the pot on the front right corner of the table,34
+train,503,other,Move the red fork to the bottom center of the table,46
+train,504,other,Move the red pepper to the right of the blue spoon,28
+train,505,other,Place the red fork to the left of the left burner,33
+train,506,other,upright hot sauce bottle cardboard fence,38
+train,507,other,,28
+train,508,other,,49
+train,509,other,,26
+train,510,other,move the spoon to the top left of the burner,23
+train,511,other,close drawer of box,15
+train,512,other,sweep into pile,98
+train,513,other,move the pan to the far left of the table,35
+train,514,other,take the sushi and put in the drawer,32
+train,515,other,put cap on container,23
+train,516,other,close low fridge,38
+train,517,other,take broccoli out of pan,38
+train,518,other,unfold the cloth from left to right,39
+train,519,other,moved the green object to the left burner,51
+train,520,other,take broccoli out of pan,38
+train,521,other,topple basil bottle cardboard fence,32
+train,522,other,take cucumber out of cup,33
+train,523,other,put the green square block to thre top of red block,48
+train,524,other,unfold the cloth from the left to the right,36
+train,525,on_surface,pick the knife and place it on the front edge of the table,44
+train,526,other,,9
+train,527,other,Place the cube on the top right just off the stove area.,39
+train,528,other,UNFOLD THE CLOTH TO THE TOP,31
+train,529,other,,49
+train,530,other,Move the napkin over to the left closer to the edge of the table.,26
+train,531,other,fold the cloth from bottom to top,39
+train,532,on_surface,Pick up the eggplant from pot put it on the table,39
+train,533,other,move green object to the left side of the table,33
+train,534,other,,49
+train,535,in_container,put spoon in bowl sink,31
+train,536,other,,49
+train,537,other,,49
+train,538,other,,50
+train,539,other,,28
+train,540,other,move the can to the right side of the table,39
+train,541,other,,49
+train,542,other,"move the red can to the left side of the stove, near the silver pot",36
+train,543,other,,49
+train,544,other,move cloth to top left of table,21
+train,545,on_surface,Take the toy out of the drawer and put it on the top left of the table.,26
+train,546,other,move the green thing inside the drawer,36
+train,547,other,it took the pot from the front left burner the to back right burner,42
+train,548,other,lift the red fork and put it back from the left burner,48
+train,549,other,turn faucet front to left,19
+train,550,on_surface,put carrot on plate,38
+train,551,other,,49
+train,552,in_container,put broccoli in pot,38
+train,553,other,moved the yellow object to the right corner,32
+train,554,other,move cloth to the right of the table,21
+train,555,on_surface,put the  yelow figure on the top edge of the cloth,25
+train,556,other,take the long cylinder out of the circle and put it above the circle,42
+train,557,other,,26
+train,558,other,lift up a orange object,48
+train,559,other,Move the pot to the right of the towel.,33
+train,560,other,fold the cloth from top right to the left,28
+train,561,in_container,flip pot upright in sink,18
+train,562,other,Pick up the pot and place it on the right of the blue spoon,33
+train,563,other,open the drawer,40
+train,564,other,,50
+train,565,other,,50
+train,566,other,,49
+train,567,other,move the can to lower left of the burner,34
+train,568,other,,40
+train,569,other,,49
+train,570,other,close fridge,37
+train,571,other,Moved yellow object to lower right corner.,37
+train,572,other,sweep into pile,41
+train,573,other,open the deck,45
+train,574,other,move the silver pot on the right burner,58
+train,575,other,sweep into pile,66
+train,576,in_container,Move the pan in front of the blue cloth,36
+train,577,other,put the yellow rectangle on top of the red,48
+train,578,other,,49
+train,579,other,move the croissant to the left of the left switch,26
+train,580,other,pick up any cup,19
+train,581,other,,29
+train,582,other,upright basil bottle cardboard fence,31
+train,583,other,move the cloth to the left lower edge of the table,23
+train,584,other,open brown1fbox flap,23
+train,585,in_container,put pepper in pot or pan,18
+train,586,in_container,flip pot upright in sink,22
+train,587,other,Move the orange cloth to the lower right of the table,36
+train,588,on_surface,remove the red cube from the green arc top and placed it on the table,43
+train,589,in_container,put blue knife in silver container on the right side of stove,53
+train,590,other,put the blue-green object in the middle of the table,26
+train,591,other,move the red arch to the right,38
+train,592,other,close oven,38
+train,593,in_container,move metal pot in between knife and red pepper,45
+train,594,other,move the white cloth from top edge of the burner to bottom edge of the burner,33
+train,595,other,unfold the cloth from bottom left to upper right,41
+train,596,other,move the silver pot on the right side of the burner,48
+train,597,other,put clothes in laundry machine,36
+train,598,other,put the green cloth below the right burner,22
+train,599,in_container,put pot or pan on stove and put mushroom in pot or pan,78
+train,600,other,upright metal pot cardboard fence,38
+train,601,other,,38
+train,602,other,pick up green mug,25
+train,603,other,,16
+train,604,other,,33
+train,605,other,open book,23
+train,606,other,unfold the cloth from left to right,39
+train,607,other,move the cloth to the left,32
+train,608,on_surface,take the white arch on the table,20
+train,609,other,,37
+train,610,other,remove the scalene triangle from the tower and put it in the the table,46
+train,611,other,,18
+train,612,other,,41
+train,613,in_container,put the blue object in the silver pot.,58
+train,614,other,,49
+train,615,other,PICK UP THE BLUE TOWEL AND PUT ANOTHER SIDE OF THE TABLE,32
+train,616,other,put the taller can on the right side of the silver pot,50
+train,617,other,turn faucet front to left,23
+train,618,other,put the cylinder on top of the cube,48
+train,619,other,Move the can to the left side of the table,19
+train,620,on_surface,Put the onion on the yellow cloth,29
+train,621,other,unfold the cloth from bottom right to top left,48
+train,622,other,upright basil bottle cardboard fence,35
+train,623,other,fold the cloth from bottom right to top left,42
+train,624,other,close the drawer,37
+train,625,other,move faucet front to left,23
+train,626,other,move the yellow cloth from back to front,40
+train,627,other,,34
+train,628,other,take the red thing and placed it inside the drawer,45
+train,629,other,,49
+train,630,in_container,put strawberry in pot,22
+train,631,other,unfold the cloth from bottom left to top right,33
+train,632,other,moved the basket to the right edge of the table,34
+train,633,other,close oven,35
+train,634,other,unfold the cloth from the top right to the bottom left,47
+train,635,in_container,Move the purple towel to the left of the table in front of the pot.,32
+train,636,other,,46
+train,637,on_surface,move the cloth on the top edge of the table,24
+train,638,other,remove the ball from the cup and put on to the blue arch,48
+train,639,other,Moved the purple towel to the left side of the table,29
+train,640,other,moved the silver plate to the left burner,37
+train,641,on_surface,grab the yellow and put it on the top side of the table,37
+train,642,on_surface,put the white object on the top right side of the orange cloth,35
+train,643,other,Take the fork ans put it between The two right burners,58
+train,644,other,unfold the cloth from the middle to the right,42
+train,645,other,put the red cube on top of the white cube,45
+train,646,other,,49
+train,647,other,,48
+train,648,other,,50
+train,649,other,,38
+train,650,other,,49
+train,651,other,,49
+train,652,other,move a brush from bottom left burner to the upper left burner,39
+train,653,other,,41
+train,654,in_container,put the blue object inside the silver pot,46
+train,655,other,,34
+train,656,other,,49
+train,657,other,,37
+train,658,other,move the silver pot and place it to the right of the right burner.,46
+train,659,other,turn lever vertical to front,23
+train,660,other,put the red cube on top of the tower,47
+train,661,other,unfold the cloth from bottom right to top left,42
+train,662,other,Move the orange cloth to far edge of the table.,32
+train,663,other,there is no change,35
+train,664,on_surface,put the blue figure on the top edge of the cloth,41
+train,665,other,put the cheese in the drawer,48
+train,666,other,unfold the cloth from top left to top right,37
+train,667,other,,45
+train,668,other,,34
+train,669,other,Open the drawer,39
+train,670,other,moved the blue cloth to left upper corner of the stove,30
+train,671,other,put cube on top of cube tower,41
+train,672,other,move the silver pot to the left stove,35
+train,673,other,,49
+train,674,other,unfold the cloth from left to right,31
+train,675,other,,38
+train,676,in_container,put carrot in pot cardboard fence,26
+train,677,other,,43
+train,678,other,,43
+train,679,other,take sushi out of pan,24
+train,680,on_surface,put carrot on plate,23
+train,681,other,put pot on stove which is near stove,23
+train,682,other,open low fridge,34
+train,683,other,unfold the cloth from bottom right to top left,35
+train,684,other,move red can to the top right of the table,23
+train,685,other,,31
+train,686,in_container,flip pot upright in sink,23
+train,687,other,lever vertical to front,22
+train,688,other,,49
+train,689,other,move the sushi to the upper right side of the table,32
+train,690,other,open the drawer,48
+train,691,other,turn faucet front to left,23
+train,692,other,Move the spoon right below the microwave,29
+train,693,other,move the white toy to the bottom middle side of the table,25
+train,694,in_container,put eggplant into pot or pan,18
+train,695,in_container,put stuffedduck in pan,34
+train,696,in_container,put the orange container in the gray basket,50
+train,697,other,,49
+train,698,other,unfold the cloth from top left to bottom right,36
+train,699,other,Move the pot to the right of the cloth.,32
+train,700,other,move the red rectangular block above the ice cream toy,35
+train,701,other,He moved the cloth back and forth,48
+train,702,other,Take the sushi out of the pot and move it to the back left corner.,37
+train,703,other,sweep into pile,86
+train,704,other,unfold the cloth from the bottom right to the top left,26
+train,705,other,Grab the fork and put it between the towel and pot.,39
+train,706,other,,49
+train,707,other,,49
+train,708,other,unfolded the cloth from  bottom left in a half way manner,35
+train,709,other,,49
+train,710,other,close the drawer,32
+train,711,other,,49
+train,712,other,misitona ilay lamba,33
+train,713,other,,29
+train,714,in_container,put beet in pot sink,26
+train,715,other,PICK UP THE BRUSH AND PUT ON THE VESSEL,35
+train,716,other,Unfold the cloth from top left to bottom right,45
+train,717,other,Move the spoon to the left of the pot.,48
+train,718,other,,49
+train,719,other,fold the cloth from right to center,28
+train,720,other,take the bowl lid and put it on the left burner,35
+train,721,other,Place the blue towel to the right of the colander,30
+train,722,on_surface,Put the red eggplant on the blue cloth.,43
+train,723,in_container,put pan in sink,22
+train,724,on_surface,Place the pot on the yellow cloth,46
+train,725,other,take the green cube off of the red arch to the left side of the table,48
+train,726,other,,49
+train,727,other,Move the yellow banana to the left edge of the table.,48
+train,728,in_container,flip pot upright in sink,18
+train,729,other,Pick the right blue square and put it above the left side blue block,40
+train,730,on_surface,put spatula on plate sink,35
+train,731,other,move the green cloth to the left side of the blue fork,34
+train,732,other,Put the red block on top of the yellow block,48
+train,733,other,put knife on cutting board,23
+train,734,other,move the silver pot to the top-middle of the burners,36
+train,735,other,,43
+train,736,other,,49
+train,737,other,,39
+train,738,other,,25
+train,739,other,fold the cloth bottom left,48
+train,740,other,put detergent in sink,19
+train,741,on_surface,Place the pot on top of the towel,48
+train,742,on_surface,move the silver pot on the orange cloth.,39
+train,743,other,,49
+train,744,other,unfold the cloth from left to right,40
+train,745,other,close oven,36
+train,746,other,push the can towards the upper right of stove,33
+train,747,in_container,Pick blue object from Burne and keep it in silver Bowl,28
+train,748,other,move the red fork to the bottom left side of the table,30
+train,749,in_container,put the maroon vegetable inside the stainless steel pot,43
+train,750,other,open fridge,38
+train,751,other,pick up violet Allen key,25
+train,752,on_surface,move the orange cloth on top of the laundry machine,40
+train,753,other,,49
+train,754,other,removed the  blue block from the tower and placed it at the left side of the table,48
+train,755,other,"Move the rectangular orange cutting board from the middle of the countertop to the left, so that it is above and to the right of the silver bowl.",34
+train,756,other,put the cube with a hole on top of the plus,29
+train,757,on_surface,Place the violet cloth on the far left edge of the table,31
+train,758,other,fold the cloth from the bottom left to the top right,43
+train,759,other,,49
+train,760,other,moved the orange clothing to wipe the burnsen burner,51
+train,761,other,move the orange carrot to the right in front of the drawer,26
+train,762,other,,49
+train,763,other,Put the bowl near the top of the spoon.,44
+train,764,in_container,put fry in pot or pan an put pot or pan on stove,77
+train,765,in_container,put knife in pot cardboard fence,33
+train,766,other,put lid on pot,38
+train,767,other,,45
+train,768,on_surface,put carrot on plate,38
+train,769,in_container,put pepper in pot or pan,17
+train,770,on_surface,take the green vegetable and put it on the blue towel,38
+train,771,other,pick up glue and put into drawer,21
+train,772,on_surface,put the blue figure on the top edge of the cloth,37
+train,773,other,lift bowl,13
+train,774,on_surface,put the green spatula on top of the blue cloth,29
+train,775,on_surface,put sushi on plate,26
+train,776,other,Put the yellow egg shape right of the silver pot.,31
+train,777,other,put the stick in the cube with a hole,45
+train,778,other,push the tin can to the lower left side of the table,24
+train,779,other,,49
+train,780,other,fold cloth from top right to bottom left,31
+train,781,other,,50
+train,782,other,topple basil bottle cardboard fence,36
+train,783,in_container,put brush into pot or pan,23
+train,784,other,,49
+train,785,other,,39
+train,786,on_surface,put the blue cube on the middle of the table,47
+train,787,other,put the banana in the drawer,41
+train,788,other,,34
+train,789,other,unfold the cloth from the right to top left,34
+train,790,other,put lid on pot or pan,19
+train,791,other,end effector reaching pot or pan,18
+train,792,other,,49
+train,793,other,move the red hexagon to the right side of the table,44
+train,794,other,fold the cloth from top left to bottom right,41
+train,795,other,move the silver pot from the right burner to the bottom left side of the stove,38
+train,796,on_surface,put the blue figure on the top edge of the cloth,33
+train,797,other,move the orange cloth beside the pot,28
+train,798,other,take the green object and put in the middle of the stove,26
+train,799,other,move the  red pot to the upper side of the table,44
+train,800,other,,49
+train,801,other,Grab the handle of the drawer and open it,25
+train,802,other,,35
+train,803,on_surface,Place the banana on the far edge of the table,47
+train,804,other,,49
+train,805,other,,25
+train,806,other,,25
+train,807,other,,38
+train,808,other,pick up pot from sink,12
+train,809,other,,49
+train,810,other,,38
+train,811,other,open the drawer,35
+train,812,other,moved the green cloth from the left side of the burner to the right.,40
+train,813,other,move the object to the top middle side of the table,57
+train,814,other,,34
+train,815,on_surface,move the blue object on the upper left of the table,38
+train,816,other,,49
+train,817,other,,32
+train,818,in_container,put pan from sink into drying rack,23
+train,819,on_surface,put blueberries on plate sink,32
+train,820,other,,30
+train,821,on_surface,put lemon on plate,28
+train,822,other,Slide the purple cloth closer to the potato.,40
+train,823,other,Put yellow brush between silver bowl and right edge of counter,40
+train,824,other,closed the drawer,43
+train,825,other,,49
+train,826,in_container,Pick up the pear and place it in the silver pot.,28
+train,827,other,,39
+train,828,other,move the spatula from right side to left side near pot,48
+train,829,other,lever vertical to front,21
+train,830,other,Move pot to middle of right side of table.,43
+train,831,other,,49
+train,832,on_surface,Put the orange pot on the top right side of the table,33
+train,833,in_container,Pick up the mushroom and place it in the metal pot.,35
+train,834,other,put the white tray in other side,48
+train,835,other,,49
+train,836,other,,49
+train,837,other,,48
+train,838,other,put the banana in the drawer,31
+train,839,other,take carrot out of pot cardboard fence,38
+train,840,other,upright basil bottle cardboard fence,34
+train,841,other,Naturals,22
+train,842,other,moved the yellow silver knife from right burner of the induction stove to the left burner of the induction stove,44
+train,843,other,fold the cloth from top right to bottom left,41
+train,844,on_surface,put carrot on plate,38
+train,845,other,,49
+train,846,other,,48
+train,847,other,,49
+train,848,other,Move towel to right edge of table.,25
+train,849,other,,49
+train,850,other,,49
+train,851,other,fold the cloth from top to bottom,26
+train,852,other,move the spatula to the the bottom right burner,43
+train,853,on_surface,put cup on plate,38
+train,854,other,,50
+train,855,other,,50
+train,856,other,remove the yellow banana from the drawer,48
+train,857,other,moved the steel pot to the upper left corner of the burner,47
+train,858,other,,34
+train,859,other,,49
+train,860,other,lever vertical to front,19
+train,861,other,move the green cloth to the upper side of the table,31
+train,862,other,unfold the cloth from bottom right to top left,48
+train,863,other,,49
+train,864,on_surface,pick the orange thing and place it on the cloth,29
+train,865,other,close the drawer,39
+train,866,other,push the cloth to the right side of the table,28
+train,867,other,open the drawer,39
+train,868,other,,49
+train,869,other,put detergent in sink,28
+train,870,other,moved yellow pepper to the top left burner,29
+train,871,in_container,put potato in pot or pan,23
+train,872,in_container,put carrot in pot cardboard fence,34
+train,873,other,,49
+train,874,other,lever vertical to front,17
+train,875,other,,48
+train,876,other,,34
+train,877,other,take banana out of colander,36
+train,878,other,put the red triangle on the cube with hole,39
+train,879,other,Placed the yellow cloth to the lower side of the right burner,31
+train,880,other,move towel to the left of the pot,48
+train,881,other,,49
+train,882,other,put the yellow block on top of the cube with a hole,48
+train,883,other,,32
+train,884,other,Move the yellow spoon to the lower right of the table.,37
+train,885,other,removed the yellow object from the drawer,35
+train,886,other,,49
+train,887,in_container,put the corn in the silver pot,25
+train,888,other,lever vertical to front,23
+train,889,on_surface,put the green spoon on top of the blue cloth,62
+train,890,other,,39
+train,891,other,Move the blue utensil to the back right corner.,30
+train,892,other,put the yellow cube on top of the tower,48
+train,893,other,fold the cloth from left to right,33
+train,894,other,,49
+train,895,other,Put yellow cube on top of of blue cube,45
+train,896,other,moved the silver pot to the right top side of the burner,31
+train,897,other,take bowl off plate cardboard fence,27
+train,898,other,put the lid on the burner,35
+train,899,other,,49
+train,900,other,,49
+train,901,other,,49
+train,902,other,Move the orange cloth behind the pot,34
+train,903,other,Move the orange pot from the right burner to the left burner,28
+train,904,in_container,Move the green spatula in front of the pot,48
+train,905,other,,34
+train,906,other,fold cloth in half,23
+train,907,other,Open the closed drawer,27
+train,908,other,open book,23
+train,909,other,,49
+train,910,other,unfold the cloth from centre to bottom,40
+train,911,other,Slide blue towel straight down towards bottom of the table.,20
+train,912,other,,49
+train,913,other,,50
+train,914,other,put the cube with a hole on top of the plus,42
+train,915,in_container,put banana in pot or pan,24
+train,916,other,,50
+train,917,other,lift bowl,18
+train,918,other,moved the silver pot to the left lower burner,58
+train,919,in_container,flip pot upright in sink,21
+train,920,other,pick up pan from stove,12
+train,921,other,,49
+train,922,on_surface,Put the steak knife on the yellow cloth.,26
+train,923,other,,22
+train,924,other,Move saucepan to the top left,48
+train,925,other,lever vertical to front,19
+train,926,other,move the can to the lower middle part of the table,36
+train,927,other,,38
+train,928,other,took the yellow cube and placed it on the red cube,42
+train,929,other,,49
+train,930,other,,49
+train,931,other,Unfold the cloth from top right to bottom left,37
+train,932,other,take broccoli out of pan,38
+train,933,other,put the cube on top of the arch,48
+train,934,other,moves a red thing to the top of the sink,57
+train,935,other,moved the blue cloth to the left side of the table,25
+train,936,other,unzip zipper bag,23
+train,937,other,remove the yellow cube from the tower and put it in the middle of the table,48
+train,938,other,put the red cube on top of the red rectangle block,48
+train,939,other,put lid on stove,22
+train,940,other,put knife on cutting board cardboard fence,36
+train,941,other,put the red block on the top of arc,40
+train,942,other,,49
+train,943,other,fold the cloth from top left to bottom right,48
+train,944,other,take clothes out of laundry machine,35
+train,945,other,take the thigh out of the pot and put on the upper left side of the stove,33
+train,946,other,,22
+train,947,on_surface,remove banana from vessel and keep it on the center corner of the table,37
+train,948,other,Place the yellow vegetable to the right of the pot.,33
+train,949,other,,49
+train,950,other,Move the silver pot to the bottom right side of the stove,37
+train,951,other,open the drawer,29
+train,952,other,upright metal pot cardboard fence,38
+train,953,other,fold the cloth from bottom right to left,45
+train,954,other,,34
+train,955,other,,28
+train,956,other,put spatula on cutting board,29
+train,957,other,move the cheese to the right side of the drawer,38
+train,958,other,,6
+train,959,on_surface,put cup on plate,30
+train,960,other,,44
+train,961,other,move the silver colander to the bottom left of the table,37
+train,962,other,,48
+train,963,on_surface,put bowl on plate,31
+train,964,other,Pick up yellow corn and move it right and towards table's edge.,34
+train,965,other,,49
+train,966,other,unfold cloth from bottom right to bottom right,30
+train,967,in_container,put broccoli in pot,34
+train,968,other,fold the cloth from the bottom to the top,38
+train,969,other,,37
+train,970,in_container,put banana in pot cardboard fence,31
+train,971,other,moved the orange object in between the right upper burners,58
+train,972,other,fold the cloth from bottom right to top left,36
+train,973,other,,49
+train,974,other,zip zipper bag,23
+train,975,other,close brown1fbox flap,21
+train,976,other,,48
+train,977,other,,46
+train,978,on_surface,move the blue spoon on top of the orange cloth,27
+train,979,in_container,move the yellow knife in the silver pot,41
+train,980,on_surface,take the blue object and place it on the upper left side of the table,36
+train,981,other,move the cloth from bottom to top left,28
+train,982,other,,49
+train,983,other,pick the pan and place near the red color spoon,37
+train,984,other,,49
+train,985,other,Move the blue spoon to the left of the silver bowl,36
+train,986,other,,49
+train,987,other,put red bottle in sink,28
+train,988,other,,29
+train,989,in_container,put cup into pot or pan,23
+train,990,other,Put the red object to the right side of the yellow spoon,32
+train,991,other,The robot folded the cloth from left to right,37
+train,992,other,,49
+train,993,other,fold the cloth from right to left,36
+train,994,other,,49
+train,995,other,Move the purple object to the left of the cloth.,43
+train,996,on_surface,put carrot on plate,38
+train,997,other,close brown1fbox flap,19
+train,998,other,open book,23
+train,999,other,,49
+train,1000,other,fold the cloth from top to bottom,37
+train,1001,other,Move the fork from right to left side of the table.,47
+train,1002,other,,34
+train,1003,other,,49
+train,1004,other,moved the things to upper table section,23
+train,1005,other,,32
+train,1006,other,Pick up the silver bowl and move it to the right next to the canned goods.,38
+train,1007,other,open microwave,36
+train,1008,on_surface,Take the green hand towel out of the basket and put it on the right side of the table.,31
+train,1009,on_surface,put the blue figure on the top edge of the cloth,39
+train,1010,other,take lid off pot or pan,22
+train,1011,in_container,put cucumber in cup,37
+train,1012,other,,49
+train,1013,in_container,Place the croissant in the pot,37
+train,1014,other,,49
+train,1015,other,turn lever vertical to front,23
+train,1016,other,close the drawer,41
+train,1017,other,removed the yellow object from the drawer,45
+train,1018,other,moved the blue brush in the middle of the two burner,33
+train,1019,other,,49
+train,1020,other,move the green cloth and place it edge of the table,29
+train,1021,other,move the cloth from top left to bottom right,22
+train,1022,other,,49
+train,1023,on_surface,put corn on plate,28
+train,1024,other,remove the yellow knife from the basket,47
+train,1025,other,put red bottle in sink,24
+train,1026,other,,49
+train,1027,on_surface,put lemon on plate,27
+train,1028,on_surface,move ball diagonally on the top right corner of the table,35
+train,1029,other,fold the cloth from the left to the right,39
+train,1030,in_container,put pot or pan from sink into drying rack,23
+train,1031,other,moved the basket to the left side of the table,35
+train,1032,in_container,Put the drumstick in the metal bowl.,33
+train,1033,other,,47
+train,1034,other,the cloth is spread to the right,34
+train,1035,other,move the blue fork to the bottom left burner,41
+train,1036,other,move the the towel to the lower left of cooktop,42
+train,1037,other,,37
+train,1038,on_surface,takes the red object and places it on top of the table,34
+val,0,other,,30
+val,1,in_container,put the corn in the silver pot,34
+val,2,other,Place the brush behind the cloth.,48
+val,3,other,,38
+val,4,other,close large4fbox flaps,22
+val,5,other,fold cloth from top to center,40
+val,6,other,Open the drawer,35
+val,7,in_container,put pepper in pot or pan,22
+val,8,other,Move green spatula to the left side of blue cloth,44
+val,9,on_surface,put out the yellow figure on the cloth,41
+val,10,in_container,put pepper in pot or pan,19
+val,11,other,move  the orange fork to the right corner,44
+val,12,other,,34
+val,13,other,,41
+val,14,in_container,put sweet potato in pot which is in sink,14
+val,15,other,place the stick on top of the block,48
+val,16,other,move the violet towel to the lower right side of the burner,25
+val,17,other,,40
+val,18,other,unfold the cloth from bottom left to top right,45
+val,19,other,,50
+val,20,in_container,put knife in pot cardboard fence,37
+val,21,other,move the object to the upper right side of the table,29
+val,22,other,put cup from sink to drying rack,23
+val,23,other,,24
+val,24,other,put the yellow knife on the left side of the sink,54
+val,25,other,move the yellow  cloth to the bottom left of the table,45
+val,26,other,,49
+val,27,other,,49
+val,28,other,"Move pot up, to left of orange cloth.",48
+val,29,other,move the cloth to the centre of the table,48
+val,30,other,,34
+val,31,other,Move the mushroom in front of the blue towel,24
+val,32,other,move the silver basket to the right burner,30
+val,33,other,fold the cloth from bottom right to the middle,35
+val,34,other,,35
+val,35,other,,33
+val,36,other,Move brush to back right side of stove top,26
+val,37,other,Take the yellow pepper out of the pot and place it to the top left.,48
+val,38,other,push the white can in front of the microwave and put blue spoon in the middle of the table,42
+val,39,other,turn faucet right,23
+val,40,other,move sushi to  the bottom side of the right burner,26
+val,41,in_container,put cup from anywhere into sink,23
+val,42,other,PICK UP THE SPOON KEEP NEAR TO THE WHITE TOWEL,45
+val,43,other,Place the yellow spoon behind the metal pot.,30
+val,44,other,move the spoon into lower left side of the table,37
+val,45,in_container,put cucumber in cup,35
+val,46,other,Place the red spoon to the left of the pot,44
+val,47,other,,45
+val,48,other,fold the cloth from the bottom right to the middle,32
+val,49,other,,26
+val,50,on_surface,unfold the cloth from left to right on table,37
+val,51,other,fold the cloth top left to bottom right,46
+val,52,other,,43
+val,53,other,,49
+val,54,other,Move the red cloth behind the pot with the carrot,42
+val,55,other,open fridge,38
+val,56,on_surface,take the monkey from the top of the drawer and put it on the table,24
+val,57,other,,49
+val,58,other,turn faucet right,23
+val,59,other,open microwave,33
+val,60,other,,26
+val,61,other,robot folded bottom left to top right,41
+val,62,other,move the silver pot to the upper left part of the stove,43
+val,63,other,,49
+val,64,other,,49
+val,65,in_container,flip pot upright in sink,21
+val,66,other,sweep into pile,82
+val,67,in_container,put sweet potato in pot which is in sink,21
+val,68,in_container,picked up the black and white object and put it in the silver pot,20
+val,69,other,put the yellow knife on the upper side of left burner,48
+val,70,other,Move the towel to in front of the cans of sauces.,20
+val,71,other,,49
+val,72,other,take the rectangle block and place it on top of the other rectangle block,48
+val,73,other,put pan on stove from sink,23
+val,74,other,,27
+val,75,other,take the lid and put it on the pot,27
+val,76,other,,40
+val,77,other,,49
+val,78,other,,49
+val,79,other,take the object above the drawer and put it inside the drawer with a blue cloth,20
+val,80,other,Pick the green box from top of the cylinder and place it on the left side,44
+val,81,in_container,put redcube in pan and put pan on stove,57
+val,82,in_container,put cup from anywhere into sink,23
+val,83,in_container,put carrot in pot or pan,23
+val,84,other,picked up orange object and move to the top left of the cloth,39
+val,85,on_surface,put potato on plate,24
+val,86,other,Put the bowl on the near edge.,37
+val,87,other,,49
+val,88,other,move the cloth to the left of the table,28
+val,89,other,,49
+val,90,other,topple hot sauce bottle cardboard fence,35
+val,91,in_container,put pear in bowl,33
+val,92,in_container,pour almonds in pot,38
+val,93,other,,28
+val,94,other,sweep into pile,76
+val,95,in_container,pour almonds in pot,38
+val,96,other,open white1fbox flap,23
+val,97,on_surface,Move the yellow cloth on the table from bottom left to bottom right,30
+val,98,other,put knife on cutting board cardboard fence,38
+val,99,other,Moved the can to the center of the table,28
+val,100,other,take carrot out of pot cardboard fence,38
+val,101,other,move blue towel above yellow knife,35
+val,102,other,Put the spatula above the cloth.,48
+val,103,other,,36
+val,104,other,move a green object,23
+val,105,other,turn faucet left,23
+val,106,other,,49
+val,107,other,open white1fbox flap,20
+val,108,other,Moved the pot to the middle lower of the burner,38
+val,109,in_container,Put the egg inside the pot.,39
+val,110,on_surface,put the orange figure on the top edge of the cloth,38
+val,111,other,,49
+val,112,other,,49
+val,113,other,fold the cloth from bottom left to top right,40
+val,114,other,move the square block with hole to the top left side of the table,44
+val,115,other,(These pictures aren't working),36
+val,116,other,upright basil bottle cardboard fence,32
+val,117,other,move the blue spoon to the lower middle left corner of the table beside the yellow cloth,58
+val,118,other,Move the red fruit slightly behind and to the left of the silver pot.,25
+val,119,other,fold the cloth from top left to bottom right centre,47
+val,120,other,moved the yellow thing from right burner to the left burner,23
+val,121,other,Lift the silver pot and then placed it back on its normal position,56
+val,122,other,put big spoon from basket to tray,25
+val,123,other,Put the blue object on the left side of the green and yellow object.,33
+val,124,on_surface,move the green cloth on the upper side of right,25
+val,125,on_surface,put carrot on plate,28
+val,126,other,turn faucet front to left,21
+val,127,other,move the red bell pepper to the left side of the table,25
+val,128,other,,49
+val,129,other,,49
+val,130,other,unfold the cloth from the bottom right to the  left,48
+val,131,on_surface,Place the pickle on top of the yellow towel,30
+val,132,in_container,put pot or pan on stove and put cauliflower in pot or pan,78
+val,133,in_container,put pot or pan on stove and put strawberry in pot or pan,78
+val,134,in_container,put pot or pan on stove and put egg in pot or pan,59
+val,135,on_surface,put corn on plate,28
+val,136,other,fold cloth in half,23
+val,137,on_surface,moved the corn on top of the green cloth,25
+val,138,other,sweep into pile,79
+val,139,other,,49
+val,140,other,fghgfjf,39
+val,141,in_container,put sweet potato in pot which is in sink,21
+val,142,other,put knife on cutting board,23
+val,143,other,move the can from the top right side to the bottom right side of the table,34
+val,144,other,close the drawer,34
+val,145,other,close small4fbox flaps,23
+val,146,other,move the orange cloth to the right of the left burner,23
+val,147,other,,28
+val,148,other,,49
+val,149,on_surface,Drop the mushroom on the blue towel.,22
+val,150,other,Move the knife to the bottom left of the table next to the silver pot,58
+val,151,other,fold the cloth from left to top right,30
+val,152,in_container,put broccoli in pot or pan,25
+val,153,other,move the silver saucepan to the bottom left corner of the table,37
+val,154,other,pick up glass cup,26
+val,155,other,upright hot sauce bottle cardboard fence,34
+val,156,other,close fridge,38
+val,157,other,Put the duck inside the drawer,26
+val,158,other,,50
+val,159,other,put big spoon from basket to tray,22
+val,160,other,Move the orange bottle to the right side of the pot.,32
+val,161,other,,49
+val,162,other,,49
+val,163,other,fold the cloth from top left to bottom right,34
+val,164,other,put the green rectangle on top of the yellow rectangle,40
+val,165,on_surface,Place the spoon on the left corner of the table.,41
+val,166,other,zip zipper bag,23
+val,167,other,close the drawer,36
+val,168,other,,49
+val,169,in_container,put pan from sink into drying rack,23
+val,170,other,,23
+val,171,other,,26
+val,172,in_container,put pan in sink,22
+val,173,other,,38
+val,174,on_surface,put the yellow banana on the table from the top of the drawer,35
+val,175,in_container,pour almonds in pot,38
+val,176,other,put fork from basket to tray,28
+val,177,other,close brown1fbox flap,23
+val,178,other,sweep into pile,98
+val,179,other,Move the fork in front of the banana.,43
+val,180,in_container,put sushi in pot or pan,23
+val,181,other,,23
+val,182,other,Place the mushroom to the lower right of the spoon,28
+val,183,other,Fold the cloth from right to left,40
+val,184,other,,49
+val,185,other,move blue brush to the right burner,37
+val,186,in_container,put cup into pot or pan,15
+val,187,other,Pick up the pot and place it behind the blue spoon,48
+val,188,other,,49
+val,189,other,turn faucet right,23
+val,190,other,video frames or not showing,41
+val,191,other,Move the the spoon from edge to corner of the table.,48
+val,192,other,put the pot on the bottom right burner,36
+val,193,other,take corn out of bowl sink,37
+val,194,other,take broccoli out of pan,38
+val,195,other,,49
+val,196,on_surface,pick orange toy from blue cloth and keep it on the vessel,27
+val,197,on_surface,Take the orange brush and put it on the top left corner of the table,23
+val,198,on_surface,Pick the  green cloth and place it on corner of the table,37
+val,199,in_container,put pepper in pan,22
+val,200,other,move the cucumber to the top right side of the table,31
+val,201,on_surface,put the red object on the bottom left of the table,29
+val,202,other,put clothes in laundry machine,38
+val,203,other,,49
+val,204,other,,35
+val,205,other,put the white object to the burner on the top right,28
+val,206,other,,31
+val,207,other,,49
+val,208,other,,14
+val,209,on_surface,placing the green towel on the right side of the table,30
+val,210,other,open low fridge,34
+val,211,in_container,put corn in pan which is on stove,21
+val,212,other,,50

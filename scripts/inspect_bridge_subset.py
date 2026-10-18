@@ -54,7 +54,7 @@ def main() -> None:
                 "instruction": instruction,
                 "steps": len(steps),
             })
-            if not sample_written:
+            if not sample_written and category != "other":
                 first = steps[0]
                 image = np.asarray(first["observation"]["image_0"])
                 tf.io.write_file(

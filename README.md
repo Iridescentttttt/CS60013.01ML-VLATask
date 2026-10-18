@@ -478,6 +478,8 @@ python scripts/inspect_bridge_subset.py \
   --output-dir artifacts/data_report
 ```
 
+当前固定分片的实际结果为 1,252 条轨迹、46,479 个时间步。语言筛选得到 188 条训练轨迹（85 条表面放置、103 条容器放置）和 48 条验证轨迹（19 条、29 条）。其余 1,016 条轨迹只保留在下载试验中，不进入动作头训练。
+
 ## 13. 动作头微调
 
 训练配置为 `head_only,language_conditioned`，冻结 `octo_transformer.*`，使用两帧历史和四步动作分块：

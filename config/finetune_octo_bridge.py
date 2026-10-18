@@ -36,7 +36,7 @@ def get_config(config_string="head_only,language_conditioned"):
             "octo.data.oxe.oxe_standardization_transforms:bridge_dataset_transform"
         ),
         "filter_functions": [
-            ModuleSpec.create("scripts.bridge_filters:course_task_filter")
+            ModuleSpec.create("scripts.bridge_filters:course_task_filter_v2")
         ],
         "num_parallel_reads": 4,
         "num_parallel_calls": 8,
@@ -102,7 +102,18 @@ def get_config(config_string="head_only,language_conditioned"):
                         "random_hue",
                     ],
                 ),
-                wrist=dict(),
+                wrist=dict(
+                    random_brightness=[0.1],
+                    random_contrast=[0.9, 1.1],
+                    random_saturation=[0.9, 1.1],
+                    random_hue=[0.05],
+                    augment_order=[
+                        "random_brightness",
+                        "random_contrast",
+                        "random_saturation",
+                        "random_hue",
+                    ],
+                ),
             ),
         ),
         frame_transform_threads=8,

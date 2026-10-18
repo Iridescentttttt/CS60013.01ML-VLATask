@@ -236,9 +236,10 @@ wandb
 
 ```bash
 python -m pip install wandb==0.16.6
+python -m pip install gym==0.26.2
 ```
 
-不要安装 `wandb==0.28.0`；它与这里固定的 `protobuf==3.20.3` 组合无法正常导入。
+不要安装 `wandb==0.28.0`；它与这里固定的 `protobuf==3.20.3` 组合无法正常导入。`gym==0.26.2` 由 Octo 官方训练可视化回调导入，SimplerEnv 仍使用 Gymnasium。
 
 ## 6. 下载模型
 

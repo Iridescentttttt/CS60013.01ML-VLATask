@@ -1,0 +1,14 @@
+Base checkpoint
+https://huggingface.co/openvla/openvla-7b
+
+Final checkpoint
+LoRA adapter, rank 8, q_proj and v_proj, selected at optimizer step 300 by validation action-token loss.
+https://github.com/Iridescentttttt/CS60013.01ML-VLATask/raw/main/checkpoints/openvla_bridge_lora_v3/best_adapter/adapter_model.safetensors
+
+Repository path:
+checkpoints/openvla_bridge_lora_v3/best_adapter
+
+The formal evaluation loaded the merged weights at models/openvla-7b-bridge-lora-v3.
+Those merged weights are not in the repository. Load the adapter onto the same Base with
+PeftModel.from_pretrained, or merge it before serving. Inference uses unnorm_key=bridge_orig
+and do_sample=False. See scripts/serve_openvla.py.

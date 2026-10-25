@@ -1,0 +1,21 @@
+{
+  "source_manifest": "artifacts/data_report/data_manifest.csv",
+  "subset": "vlalora BridgeData V2 RLDS subset, seed 42, 60 train shards + 12 val shards, 7.756 GiB",
+  "rule": "Official RLDS split is preserved. train.csv = official train trajectories labeled on_surface or in_container. test.csv = official val trajectories with the same labels. A trajectory is never divided across the two files. Category other is excluded, matching scripts/bridge_filters.py course_task_filter_v2.",
+  "train": {
+    "trajectories": 548,
+    "steps": 18639,
+    "on_surface": 249,
+    "in_container": 299
+  },
+  "test": {
+    "trajectories": 128,
+    "steps": 4267,
+    "on_surface": 54,
+    "in_container": 74
+  },
+  "excluded_other": {
+    "train": 2566,
+    "val_not_used_as_test": 514
+  }
+}

@@ -1,0 +1,129 @@
+split,episode_index,category,instruction,steps
+val,1,in_container,put the corn in the silver pot,34
+val,7,in_container,put pepper in pot or pan,22
+val,9,on_surface,put out the yellow figure on the cloth,41
+val,10,in_container,put pepper in pot or pan,19
+val,14,in_container,put sweet potato in pot which is in sink,14
+val,20,in_container,put knife in pot cardboard fence,37
+val,41,in_container,put cup from anywhere into sink,23
+val,45,in_container,put cucumber in cup,35
+val,50,on_surface,unfold the cloth from left to right on table,37
+val,56,on_surface,take the monkey from the top of the drawer and put it on the table,24
+val,70,in_container,put the sushi into the sliver pot,33
+val,72,in_container,put pear in bowl,19
+val,87,in_container,pick up bowl and put in small4fbox,23
+val,110,on_surface,put the red object on the top of the yellow cloth,48
+val,111,in_container,put pepper in pot or pan,13
+val,112,in_container,put eggplant into pan,23
+val,125,in_container,Place the white donut in the pot,32
+val,136,on_surface,put apple on plate and stuffedlion in pot or pan on stove,71
+val,141,in_container,put corn in pan which is on stove,22
+val,142,in_container,put eggplant in pot or pan,19
+val,152,in_container,put pan on stove and put stuffedduck in pan,68
+val,159,in_container,put pickle in pot or pan an put pot or pan on stove,75
+val,161,on_surface,put bowl on plate cardboard fence,25
+val,171,in_container,put corn in pan which is on stove,21
+val,174,on_surface,"Place spoon on orange cloth, positioned up and down.",29
+val,175,in_container,put stuffedduck in pan,41
+val,176,on_surface,put potato on plate,25
+val,193,in_container,flip pot upright in sink,21
+val,195,in_container,put sweet potato in pot which is in sink,21
+val,196,in_container,picked up the black and white object and put it in the silver pot,20
+val,209,in_container,put redcube in pan and put pan on stove,57
+val,210,in_container,put cup from anywhere into sink,23
+val,211,in_container,put carrot in pot or pan,23
+val,213,on_surface,put potato on plate,24
+val,219,in_container,put pear in bowl,33
+val,220,in_container,pour almonds in pot,38
+val,223,in_container,pour almonds in pot,38
+val,225,on_surface,Move the yellow cloth on the table from bottom left to bottom right,30
+val,237,in_container,Put the egg inside the pot.,39
+val,238,on_surface,put the orange figure on the top edge of the cloth,38
+val,252,on_surface,move the green cloth on the upper side of right,25
+val,253,on_surface,put carrot on plate,28
+val,257,on_surface,Put the spoon on the dish towel,48
+val,260,in_container,Put eggplant into pot.,26
+val,262,on_surface,Pick up the pot and move on top of the towel,35
+val,268,in_container,flip pot upright which is in sink,18
+val,269,in_container,the red handkerchief is put in the plastic basket,42
+val,274,on_surface,Move the chicken leg in the silver pot that place on the top of the orange towel,47
+val,276,in_container,pour almonds in pot,38
+val,286,on_surface,placed the orange clothe on top of the stove,33
+val,287,on_surface,Put the pot on the blue cloth.,31
+val,288,in_container,place the red object inside the silver pot,58
+val,291,on_surface,Put the mushroom on top of the blue cloth.,35
+val,296,on_surface,place vessel on the blue cloth,41
+val,310,in_container,put cup from anywhere into sink,16
+val,314,in_container,put strawberry in pot,20
+val,320,in_container,Put the napkin in between the spoon and the bowl but slightly above them.,27
+val,324,in_container,put carrot in pot cardboard fence,31
+val,333,on_surface,Pick up the silver pot and place it on the blue towel.,36
+val,339,on_surface,put bowl on plate,29
+val,341,in_container,TAKEN THE POLASTIC BOWL PUT IN THE GREEN TOWEL,32
+val,351,in_container,Place the mushroom into the pot,39
+val,353,on_surface,put carrot on plate,23
+val,355,on_surface,put the green figure on the top edge of the cloth,40
+val,356,on_surface,move the silver pot to bottom left side on the table,27
+val,363,on_surface,put pear on plate and blueberry in pot or pan in sink,78
+val,364,in_container,put pepper in pan,24
+val,375,on_surface,put bread on plate and pear in pot or pan on stove,64
+val,377,in_container,put pot in sink,18
+val,381,on_surface,put eggplant on plate,23
+val,383,on_surface,Place the capsicum on the left edge of the table.,48
+val,387,on_surface,Place the pickle on top of the yellow towel,30
+val,388,in_container,put pot or pan on stove and put cauliflower in pot or pan,78
+val,389,in_container,put pot or pan on stove and put strawberry in pot or pan,78
+val,390,in_container,put pot or pan on stove and put egg in pot or pan,59
+val,391,on_surface,put corn on plate,28
+val,393,on_surface,moved the corn on top of the green cloth,25
+val,397,in_container,put sweet potato in pot which is in sink,21
+val,405,on_surface,Drop the mushroom on the blue towel.,22
+val,408,in_container,put broccoli in pot or pan,25
+val,421,on_surface,Place the spoon on the left corner of the table.,41
+val,425,in_container,put pan from sink into drying rack,23
+val,428,in_container,put pan in sink,22
+val,430,on_surface,put the yellow banana on the table from the top of the drawer,35
+val,431,in_container,pour almonds in pot,38
+val,436,in_container,put sushi in pot or pan,23
+val,442,in_container,put cup into pot or pan,15
+val,455,in_container,put the sushi in between the pot and the lid,26
+val,461,in_container,put cup from anywhere into sink,23
+val,462,on_surface,Move the utensil and place it on the center of the table.,48
+val,465,in_container,flip pot upright in sink,20
+val,490,in_container,put green squash in pot or pan,23
+val,498,on_surface,put the cone on the center of the table,48
+val,499,on_surface,take the rubber chicken and put it on the left side of the table,28
+val,506,in_container,put strawberry in pot,23
+val,524,in_container,put corn in pan which is on stove,21
+val,528,in_container,put pear in bowl,33
+val,531,on_surface,put the silver pot on top of the purple cloth,35
+val,542,in_container,pour almonds in pot,38
+val,543,on_surface,Place the metal pot on the purple cloth.,41
+val,544,on_surface,put eggplant on plate,23
+val,550,on_surface,Put the silver bowl on top of the purple cloth,30
+val,554,in_container,put can in pot,28
+val,557,on_surface,Place the red object on the edge of the cloth,27
+val,559,in_container,put pot or pan on stove and put blueberry in pot or pan,71
+val,563,on_surface,Put the bowl on the front left edge of the table,36
+val,564,in_container,put spoon in pot,23
+val,565,on_surface,Pick up the red spoon and place it on the blue cloth,34
+val,566,on_surface,Move the spatula and place it on the green cloth.,48
+val,569,on_surface,take the bear out of the pot onto the middle of the table,56
+val,570,on_surface,put mushroom on plate and fry in pot or pan in sink,78
+val,575,in_container,"Put mushroom in pot laying down, angled up and down.",26
+val,580,on_surface,pick orange toy from blue cloth and keep it on the vessel,27
+val,581,on_surface,Take the orange brush and put it on the top left corner of the table,23
+val,582,on_surface,Pick the  green cloth and place it on corner of the table,37
+val,583,in_container,put pepper in pan,22
+val,585,on_surface,put the red object on the bottom left of the table,29
+val,593,on_surface,placing the green towel on the right side of the table,30
+val,595,in_container,put corn in pan which is on stove,21
+val,598,in_container,put pot or pan in sink,22
+val,600,in_container,flip pot upright in sink,19
+val,602,in_container,put the fork in the pot,48
+val,610,in_container,put pot or pan in sink,23
+val,615,in_container,put potato in pot cardboard fence,32
+val,625,on_surface,Move the pot and place it on top of the towel.,30
+val,626,in_container,put the panda in the pot,46
+val,638,in_container,put sushi in pot or pan,23
+val,640,in_container,put potato in pot cardboard fence,27

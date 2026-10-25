@@ -1,0 +1,331 @@
+split,episode_index,category,instruction,steps
+train,6,other,Place the yellow brush to the left of the purple towel,24
+train,20,other,Move the spoon to the middle of the pan and blue cloth,43
+train,27,other,move the orange towel to the bottom left burner,24
+train,35,other,take the small spoon and put aside the pot,58
+train,56,on_surface,put blueberry on plate and spoon in pot or pan in sink,76
+train,60,other,PICK UP THE SPOON AND PUT NEAR THE ORANGE TOWEL,30
+train,92,on_surface,Take the stainless steel pot and put it on the blue towel,46
+train,98,other,Move the spoon from one side to other side of the table.,48
+train,106,other,Place the blue cloth just left of the spoon.,24
+train,127,other,moved the towel to the right burner next to silver pot,24
+train,130,on_surface,Pick up the blue spoon and place it on the middle left of the table,48
+train,133,other,move the bowl to the red towel,27
+train,139,other,move the white basket with blue towel at the left side of the washing machine,46
+train,149,on_surface,put the orange towel on the floor,24
+train,152,other,Place the blue spoon to the left of the pot,41
+train,153,other,picked up the orange cloth and place it beside the white basket,26
+train,178,other,move the blue spoon to the centre of the burner machine,25
+train,204,in_container,put spoon in bowl sink,35
+train,207,other,Move the spoon to the far left edge of the table,29
+train,214,other,take the yellow cloth from the basket to the table,48
+train,227,other,move the knife to the yellow basket,35
+train,273,on_surface,Pick up the blue spoon and place it on the far right corner of the table,36
+train,314,on_surface,Moved the blue cloth on the right side of white basket,35
+train,324,other,Move the spoon to the other side of the table,46
+train,329,other,Grab and put back the red spoon ontop the stove,28
+train,336,other,Move the spoon at the right of the table.,39
+train,355,other,Place the orange towel just behind the vessel,27
+train,368,on_surface,Play the spoon on top of the orange towel,30
+train,370,other,reposition the blue spoon in the bottom middle of the table,47
+train,403,other,moved the blue spoon to the upper centre of the stove,25
+train,406,other,Move the red spoon to the left side bottom of stove,30
+train,452,other,move the green towel to the right side of the table,29
+train,460,on_surface,put eggplant on plate,23
+train,491,other,move the blue spoon to the bottom left of the stove,48
+train,503,on_surface,Place the blue brush behind the metal bowl on the purple towel,38
+train,532,on_surface,put the spoon handle on the bottom side of the table,49
+train,544,other,"Move green cloth to upper right of spoon, touching the spoon.",45
+train,546,in_container,put spoon in bowl sink,31
+train,579,other,put the pot over the yellow towel,32
+train,585,on_surface,Place the blue fork on top of the yellow towel,37
+train,588,on_surface,Move the fish and place it on the towel.,30
+train,595,other,moved the yellow towel closer to the silver pot.,26
+train,606,other,Move the green towel in front of the left burner,24
+train,609,on_surface,Place spatula on top of towel.,26
+train,612,other,Move the pot to the left side of the spoon.,33
+train,628,other,move the red spoon on the upper right corner of the stove,33
+train,658,other,Place the pan over the orange towel,48
+train,687,other,put big spoon from basket to tray,28
+train,736,on_surface,Place the pot on the green folded towel,26
+train,740,in_container,put spoon in pot,23
+train,760,other,Move the colander in front of the red spoon,38
+train,765,other,removed the green cloth from the basket and placed it right of the basket,38
+train,767,other,Move the blue towel in front of the spoon and mushroom,21
+train,776,other,put the silver pot above the yellow towel,39
+train,802,other,Move the spoon between the microwave and towel,37
+train,819,other,Move the blue napkin across the table and next to the red spoon.,23
+train,825,other,move the orange rag to the left side of the table below the spoon,29
+train,842,other,Place the spoon between the pot and the cans,36
+train,868,in_container,put the plastic spoon inside the silver pot,55
+train,896,on_surface,Pick up the blue spoon and place it on the yellow cloth,45
+train,901,other,Move the bowl from the towel to the counter.,29
+train,903,on_surface,Move the spoon with the robot and palce it on the blue cloth.,34
+train,918,other,Pick up the red spoon and place it on the left of the pot,48
+train,923,other,Place the pot behind the towel,24
+train,930,in_container,move something orange cloth in the basket,36
+train,935,other,cover the purple eggplant from right to left,37
+train,941,on_surface,Place bread on purple towel,30
+train,943,other,Move the red spoon so that it's horizontal against the wall near the checkered can.,48
+train,950,other,put big spoon from basket to tray,24
+train,951,other,Move the orange towel to the left of the pot,36
+train,965,other,move the spoon from the sink to the yellow basket,51
+train,973,other,move the red spoon to the edge,44
+train,974,on_surface,Move the white object on top of the towel,35
+train,984,on_surface,Place the red spoon on top of the yellow towel,48
+train,1000,on_surface,move the thing from the orange towel and put on he right side of the stove,41
+train,1051,in_container,Put red spoon in orange bowl,47
+train,1052,other,move yellow towel to lower left corner,26
+train,1060,on_surface,Place red spoon on the green cloth,48
+train,1075,other,Pick up the spoon and place it in the opposite corner,43
+train,1081,other,Move the towel a little to the left,31
+train,1098,other,Put the cube in front of the spoon,47
+train,1121,other,Move the spoon to the left of the purple cloth,34
+train,1129,other,moved the blue towel to the far left side of the table,39
+train,1131,in_container,move the purple towel in front of the pot,33
+train,1144,on_surface,keep yellow spoon on the blue cloth,29
+train,1145,other,moved the blue towel from the upper left of the table to the lower right,32
+train,1151,other,move towel down to lower left corner of table,21
+train,1161,other,move the blue spoon to the top left side of the stove,48
+train,1179,other,Put the spoon to the left of the pot.,34
+train,1185,other,move the towel to the lower right of cooktop,26
+train,1192,other,Pick up the sausage and place it on the left of the blue spoon,28
+train,1195,other,Slide the blue towel to the front right corner of the table.,30
+train,1198,on_surface,took the silver pot from the table and put it on top of the blue towel,39
+train,1209,other,move the grey basket beside left side of the blue cloth,44
+train,1216,other,Move the yellow towel to the left of the blue fork.,48
+train,1235,other,move red spoon from middle the stove to the front right burner,28
+train,1247,other,move the silver basket to the right burner,42
+train,1273,other,put small spoon from basket to tray,28
+train,1316,other,move blue spoon on the right,33
+train,1362,other,Move the spoon to the back left corner of the table,37
+train,1371,other,Put the bowl near the bottom of the spoon.,48
+train,1383,other,Place the blue towel to the right of the blue spoon,44
+train,1394,on_surface,Move the green vegetable onto the purple towel.,37
+train,1412,other,put fork from basket to tray,28
+train,1423,other,Put the pan above the blue spoon,48
+train,1454,on_surface,Pick up the silver pot and place it on top of the purple towel.,36
+train,1464,other,moove the red spoon to the right of the burner,42
+train,1474,on_surface,put the orange cloth on the table between the green cloth and the white basket,15
+train,1478,other,Slide the towel towards the left side of the stove.,40
+train,1484,other,Pick up blue spoon and place it above orange towel,42
+train,1492,other,take the eggplant and put it between the two right burners,53
+train,1494,other,move the silver basket to the left side of the table,46
+train,1512,other,Move the blue spoon to the lower left edge of table,45
+train,1515,other,Move the spoon to the front right edge of the table,39
+train,1538,other,Move the spoon at the right edge of the table,29
+train,1567,other,Move the blue spoon to in front of and to the right of the purple eggplant.,42
+train,1574,other,Move the towel middle far left of table,40
+train,1593,other,take the red spoon and put it on the upper left side of the stove,48
+train,1606,on_surface,put blueberry on plate and spoon in pot or pan in sink,78
+train,1611,other,Move the blue spoon to the front right corner.,35
+train,1615,other,Move the spoon so that it sits in front of the space between the microwave and the can with the red label.,27
+train,1636,other,Move the spoon between the mushroom and the pot,34
+train,1645,other,PICK UP THE BRUSH AND PUT NEAR THE VIOLET TOWEL,48
+train,1649,on_surface,put spoon on plate,28
+train,1651,other,put the green spatula above the red towel,45
+train,1652,other,Pick up the red spoon and place it on the left of the pot,48
+train,1660,on_surface,Place the mushroom on the blue towel,35
+train,1672,on_surface,Place the ladle on the green towel.,35
+train,1685,other,Move spoon to bottom right of pot.,29
+train,1700,other,Move the towel to the lower right corner.,24
+train,1718,other,put big spoon from basket to tray,26
+train,1735,in_container,moved the yellow cloth from the silver pot to in between the blue spoon and yellow cloth,27
+train,1739,other,put small spoon from basket to tray,28
+train,1740,other,take the eggplant and put it between the two right burners,50
+train,1753,on_surface,Take the stainless steel pan and put it on the blue towel,48
+train,1754,other,Move the towel bottom middle of table,30
+train,1755,in_container,put the blue cloth in the basket,31
+train,1761,other,take the blue spoon and put it at the center of the table,39
+train,1810,other,Take the eggplant out of the pot and move it to the right of the fork.,44
+train,1822,other,Move spoon to right of towel.,29
+train,1827,other,move red towel to just left of yellow knife,39
+train,1833,other,move blue spoon to left of towel,41
+train,1861,on_surface,Place the spoon to the left of the pot on the towel,39
+train,1865,in_container,put eggplant into pan,17
+train,1910,other,Move the spoon to the right of the bowl and yellow and green object.,37
+train,1911,other,Move the orange towel behind the metal pot next to the blue scoop.,31
+train,1914,other,put the spoon next to the towel,48
+train,1945,on_surface,Move the spatula and place it on top of the towel.,40
+train,1965,other,moved the yellow towel from the right lower part of the cooker to the right burner,31
+train,1968,other,move the towel to the upper right corner,22
+train,1973,other,PICK UP THE ORANGE TOWEL AND PUT ANOTHER SIDE OF THE TABLE,28
+train,1979,other,take spoon out of bowl sink,33
+train,1983,other,Put the silver spoon in the yelow tray.,53
+train,2000,on_surface,Place the blue spoon on the back left corner of the table,48
+train,2040,other,Move the purple towel near the cans.,33
+train,2080,other,move the purple towel to the top center corner of the burner,21
+train,2081,other,put the blue spoon on the left side of the burner,44
+train,2110,other,move the silver pot to the center left of the table and to the left of the purple towel,32
+train,2113,other,put small spoon from basket to tray,28
+train,2115,other,take the eggplant and put it between the two right burners,37
+train,2162,in_container,put spoon into pan,15
+train,2190,other,put small spoon from basket to tray,28
+train,2194,other,move the orange towel in the upper left side of the burner,29
+train,2203,other,Put potato between the red spoon and the pan,33
+train,2211,in_container,move the grey basket  into the  basin,51
+train,2242,other,put the green towel into the washing machine,47
+train,2246,other,Place the blue spoon to the right of the purple towel,37
+train,2257,other,Take the blue spoon to the left side of the peaches can and moves them to the center of table,38
+train,2263,other,move the blue spoon on the right burner,48
+train,2264,other,move the spoon to the bottom left of the table,40
+train,2273,other,Move the purple towel to the back right corner of the stove,22
+train,2284,other,"put the towel at the front, over fork tangs.",48
+train,2295,other,put the mushroom in between the corn and the towel,23
+train,2310,on_surface,Move the spoon and place it on the towel.,25
+train,2324,other,take spoon out of bowl sink,35
+train,2329,other,Move the towel towards the bottom of the counter.,23
+train,2330,other,Place the green towel between the red fork and pot,41
+train,2333,on_surface,move blue spoon onto towel,47
+train,2370,other,put the red spoon on top of the right bottom burner,44
+train,2383,other,move the blue spoon over the upper left burner,27
+train,2400,other,move towel left to just below bowl,32
+train,2412,in_container,put eggplant in pot or pan,23
+train,2420,on_surface,Place the blue spoon on the front left corner of the table,47
+train,2436,on_surface,Place the yellow brush on the green towel,29
+train,2437,other,PICK UP THE BLUE TOWEL AND PUT NEAR THE VESSEL,48
+train,2457,in_container,Place the pot in front of the green towel.,29
+train,2474,other,Pick up the orange towel and move it diagonally in place before dropping it.,24
+train,2485,other,Take the blue spoon and put it on the upper side of the sink.,58
+train,2517,other,put big spoon from basket to tray,28
+train,2556,in_container,put the green cloth in the basket,43
+train,2567,in_container,Move the spoon from the utencils ruck to the pot in the sink,41
+train,2572,other,Put the pan on the upper right side of the blue spoon,29
+train,2574,on_surface,Move the red spoon and place it onto the yellow towel,48
+train,2610,other,take the eggplant and put it between the two right burners,25
+train,2621,in_container,put the gray basket in the sink,47
+train,2626,other,Move the spoon to the left of the can.,48
+train,2634,other,Put red spoon upside down on left front edge of the counter,48
+train,2639,other,Place the blue spoon behind the pot,40
+train,2640,on_surface,move green spatula onto towel,33
+train,2642,other,Move the blue towel between the yellow brush and the colander,27
+train,2644,other,move the white basket to the left side of the table,35
+train,2655,other,moves the blue spoon to the bottom left burner,26
+train,2656,other,take the blue towel and place it the basket,37
+train,2665,other,move the yellow spoon to the left side of the table,35
+train,2669,in_container,put spoon in silver bowl,40
+train,2678,in_container,put spoon in pot,23
+train,2696,other,put the yellow object behind the silver basket,49
+train,2708,other,move cheese to towel,33
+train,2716,other,take the blue spoon and put it on the upper left of the burner,28
+train,2733,on_surface,Place the pot on top of the towel.,33
+train,2735,other,put fork from basket to tray,28
+train,2738,in_container,moves the silver spoon into the brown pot,46
+train,2749,on_surface,take the spoon on the lower left part of the table,17
+train,2752,other,move the blue towel to the left side of the table.,23
+train,2757,other,Pick up the red spoon and place it on the right of the can,48
+train,2759,other,Move the orange towel a little to the right,29
+train,2778,other,Move the apple and put it behind the spoon.,48
+train,2783,in_container,put spoon into pan,18
+train,2827,other,put the blue spoon in the sink,58
+train,2852,on_surface,Lay the laundry basket on top of the blue towel,34
+train,2854,other,moved the towel to the upper right burner,33
+train,2861,on_surface,Place croissant on top of towel.,34
+train,2886,other,take spoon out of bowl sink,36
+train,2894,other,moved blue spoon to silver pot placed on bottom left burner,58
+train,2906,on_surface,pick up the blue fork and put it on top of the towel,29
+train,2947,other,Place the spoon in front of the cans,35
+train,2954,other,move the blue cloth above the yellow spoon,28
+train,2961,other,put the red spoon in the bottom right corner of the sink,51
+train,2972,in_container,put pan in front of towel,30
+train,2986,on_surface,put red spoon on the green cloth,38
+train,2992,other,move the spoon to the bottom end of the table,37
+train,3033,other,Put the spoon to the left of the blue cloth,26
+train,3034,on_surface,moved spoon on top of the cloth,46
+train,3056,other,move the red item from the silver pot to the silver basket,40
+train,3060,other,move the silver basket to the left bottom of the burner,40
+train,3075,other,move spoon to below the bowl on right,36
+train,3079,other,Move towel to the left of the red spoon,44
+train,3091,other,take the spoon and place it on the left,33
+train,3092,on_surface,move the yellow spoon on the bottom part of the table,30
+train,3099,on_surface,move the white basket to the right on top of the blue cloth,44
+train,3126,other,Move the towel above the pot.,23
+train,3135,other,move the blue towel to the middle of the table,32
+train,3141,in_container,put the blue spoon in the silver pot,42
+train,3143,on_surface,Move the blue spoon from downward to upward direction on the table,34
+train,3151,other,move the blue spoon to the bottom right of the stove,27
+train,3157,in_container,take the orange cloth from the washing machine and put it in the white basket,34
+train,3176,other,take the serving spoon from the sink and put it on the left side,58
+train,3179,in_container,Put the purple cloth in the white basket,40
+train,3191,in_container,Move the pot and place it slightly in between the bottle and the towel.,42
+train,3210,other,put the red spoon no the bottom left burner,32
+train,3223,other,put bowl between fork and towel,48
+train,3226,other,Move the purple towel to the front middle edge of the table.,38
+train,3232,other,move bowl next to left edge of towel,31
+train,3247,other,take the eggplant and put it between the two right burners,30
+train,3249,other,Move the mushroom to the table between the towel and spoon.,31
+train,3258,on_surface,move green spatula onto towel,26
+train,3282,other,take out the green cloth from the basket and put it above the blue cloth,48
+train,3293,other,Move the blue brush in front of the orange towel,34
+train,3294,other,put small spoon from basket to tray,28
+train,3344,other,move a towel to the bottom right of the table,18
+train,3361,on_surface,Put the pot on top of the orange towel,28
+train,3362,in_container,Place the red spoon in the silver pot.,48
+train,3376,other,place the noodle spoon between the two pans,50
+train,3380,other,Place the metal pot behind the blue spoon.,38
+train,3407,other,Slide the yellow towel and place it in front of the canned goods.,26
+train,3411,on_surface,Place the green and yellow object on the yellow towel,34
+train,3418,on_surface,PICK UPTHE  TOWEL PUT ON THE ANOTHER SIDE OF THE TABLE,32
+train,3419,other,Place the green towel to the right of the pot.,32
+train,3423,other,Move silver bowl to right side of eggplant,48
+train,3427,other,PICK UP THE  ORANGE TOWEL AND PUT NEAR THE VESSEL,48
+train,3431,on_surface,Place the yellow pepper on top of the blue towel,34
+train,3433,other,move the silver basket to the right burner,36
+train,3451,on_surface,pick the stainless steel pot and place it onto the green towel,43
+train,3467,other,move the towel to the bottom right corner of the table.,30
+train,3468,in_container,Place the eggplant inside the orange pot,46
+train,3473,on_surface,Place the spoon on the blue cloth.,37
+train,3477,other,"Place the spoon near the front edge of the table, in front of the blue cloth.",25
+train,3507,other,put small spoon from basket to tray,28
+train,3523,other,Move the towel right next to the fork,42
+train,3533,on_surface,Move the mushroom and place it on the blue towel,32
+train,3558,other,Move the spoon above the cloth.,45
+train,3565,other,put the green towel inside the washing machine,46
+train,3577,other,move the white basket at the left side of the blue cloth,31
+train,3585,other,move the blue spoon to the bottom side of the table,23
+train,3590,other,put fork from basket to tray,28
+train,3592,other,Pick the blue spoon by the robot and place it beside the pan,22
+train,3614,other,Turned the spoon and the scooping side facing leftside,48
+train,3620,other,Move the towel towards the bottom of the counter.,28
+train,3636,on_surface,take the thing out of basket and put it on the right side of the table,36
+train,3645,on_surface,Remove the lid from the metal container and place it on the orange towel,39
+train,3652,other,move the silver basket to the right burner,58
+train,3661,on_surface,pick the blue spoon and put it onto the blue towel,33
+train,3667,on_surface,move the spoon on top of the blue cloth,23
+train,3691,other,The red and blue spoons are separated.,48
+train,3706,other,put fork from basket to tray,28
+train,3720,other,move the banana to between the spoon and bowl,31
+train,3729,in_container,Move the red spoon to the middle front of the table so that it is in between the pot and can.,34
+train,3736,on_surface,removed the purple cloth from basket and placed it on the table,48
+train,3746,on_surface,Pick up the white utensil and place it in the silver pot sitting on the blue towel.,28
+train,3747,other,put big spoon from basket to tray,24
+train,3762,other,Move the towel to the front left corner of the table,24
+train,3769,other,Slide the green cloth to the left next to the spoon.,34
+train,3775,in_container,put eggplant in pot or pan,23
+train,3778,in_container,put spoon into pan,23
+train,3782,other,move the bowl to towel,32
+train,3784,other,Remove the blue spoon from the right cooker.,30
+train,3801,other,Move the spoon to the center back of table.,31
+train,3802,other,Place the red spoon behind the metal bowl.,32
+train,3847,other,"the table has a violet cloth, a spoon and a plate",35
+train,3853,other,move towel down to lower left corner,21
+train,3854,other,Move towel towards bottom left corner of counter.,31
+train,3869,on_surface,Place the red strawberry on top of the purple towel,40
+train,3879,other,Pick up the red spoon and place it to the left of the yellow cloth,48
+train,3882,other,put the can in the right side of the yellow towel,42
+train,3901,other,PICK UP THE GREEN TOWEL AND MOVE ANOTHER SIDE OF THE TABLE,29
+train,3922,other,Slide the blue towel next to the white utensil in front of the can of sauce.,27
+train,3926,on_surface,Place the spoon on the orange cloth,48
+train,3934,other,move sushi to just left of blue spoon,46
+train,3956,other,Puts the blue towel in the object,37
+train,3977,in_container,put spoon in pot,23
+train,3992,other,Move the orange towel to the front left corner of the table,32
+train,4021,other,Slide towel to the bottom of the table.,23
+train,4052,on_surface,put the corn on the towels left edge,48
+train,4073,in_container,put spoon into pan,23
+train,4091,other,move the dark blue towel to the center of the table,38
+train,4095,on_surface,take the sushi and put it on the green towel,29
+train,4101,in_container,moved the yellow spoon into the red container,55
+train,4102,on_surface,move the spoon and place it onto the red towel.,48
+train,4104,other,Move the red spoon to the left of the colander,47
+train,4149,on_surface,Place the pot on top of the orange towel,34

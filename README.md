@@ -1,12 +1,55 @@
-# Octo-Small 1.5 × SimplerEnv × WidowX
+# OpenVLA-7B LoRA × SimplerEnv × WidowX
 
-本项目提供 Octo-Small 1.5 在 SimplerEnv WidowX 任务中的推理与评估代码。项目从本地模型目录加载检查点，通过兼容层连接 Octo 与 SimplerEnv，执行视觉语言控制策略，并输出逐回合记录、成功率汇总和视频。
+本仓库是机器学习课程 B 类作业：在 BridgeData V2 子集上对 `openvla/openvla-7b` 做 LoRA 微调，并在 SimplerEnv WidowX 的两个任务上比较 Base 与 Final。实验报告见 [`docs/实验报告.md`](docs/实验报告.md)，PDF 见 [`docs/实验报告.pdf`](docs/实验报告.pdf)。
 
-课程 B 类的模型依据、BridgeData V2 分片方案、轻量微调设计和正式评测协议见 [`docs/B_TASK_REPORT.md`](docs/B_TASK_REPORT.md)。
+## 本次提交的结果
 
-## 1. 方案说明
+正式初始状态在 `config/eval_states_b_formal.json`。Base 与 Final 各在 T1、T2 上运行 10 次，共 40 个 episode。
 
-| 项目 | 当前选择 |
+| 模型 | 训练模块 | T1 | T2 | B-SimplerScore |
+| --- | --- | ---: | ---: | ---: |
+| Base `openvla/openvla-7b` | 无本次微调 | 1/10 | 1/10 | 10.0 |
+| Final，验证损失最低且达到保存阈值的 step 300 | LoRA `q_proj`、`v_proj`，rank 8 | 0/10 | 5/10 | 25.0 |
+
+T1 变化 −10.0 个百分点，T2 变化 +40.0 个百分点，平均分变化 +15.0 个百分点。逐 episode 记录在 `results/b_formal/episodes.csv`。
+
+| 项目 | 位置 |
+| --- | --- |
+| Base 下载 | <https://huggingface.co/openvla/openvla-7b> |
+| Final adapter | `checkpoints/openvla_bridge_lora_v3/best_adapter` |
+| 合并后的评测权重 | `models/openvla-7b-bridge-lora-v3` |
+| 权重说明 | `checkpoint_link.txt` |
+| 训练配置与日志 | `checkpoints/openvla_bridge_lora_v3/train_config.json`，`logs/openvla_bridge_lora_v3.jsonl` |
+| 代表视频 | `results/b_formal/representative/` |
+
+训练样本来自 BridgeData V2。种子 42 的 60 个训练分片和 12 个验证分片先筛出表面放置与容器放置，再保留含 spoon、towel、eggplant、basket 的轨迹；另外 80 个未使用的训练分片只补充训练集。提交用的 Final 是 v3：在这些关键词轨迹里删掉静止帧，再用 `scripts/finetune_openvla_bridge.py` 的默认参数训练。动作前 6 维使用 Base 自带的 `bridge_orig` q01/q99，夹爪维保持 0/1。v3 的 checkpoint 按验证集动作 token 损失选择。Final 确定后做了一次全量数据探究，保留同一批轨迹的全部时间步，闭环成功率为 0/20，不替换 Final。
+
+复现正式对比：
+
+```bash
+bash scripts/run_b_formal.sh
+python scripts/summarize_openvla_formal.py
+```
+
+`run_b_formal.sh` 会分别启动 Base 和 Final 的动作服务，再用 SimplerEnv 环境各评测 10 次。重新训练使用：
+
+```bash
+bash scripts/run_b_openvla_v3.sh
+```
+
+该命令在训练结束后会在开发种子上再跑一轮 Final，那一轮只用于检查流程，不替代 `results/b_formal/`。
+
+下文保留早期 Octo-Small 1.5 的环境安装、动作适配和训练冒烟测试。那些步骤用来确认 WidowX 接口，正式 Base / Final 对比以上面的 OpenVLA 实验为准。Octo 方案说明见 [`docs/B_TASK_REPORT.md`](docs/B_TASK_REPORT.md)。
+
+# 早期记录：Octo-Small 1.5 × SimplerEnv × WidowX
+
+本项目同时保留 Octo-Small 1.5 在 SimplerEnv WidowX 任务中的推理与评估代码。项目从本地模型目录加载检查点，通过兼容层连接 Octo 与 SimplerEnv，执行视觉语言控制策略，并输出逐回合记录、成功率汇总和视频。
+
+## 1. 早期 Octo 验证所用设置
+
+下面的表格和安装步骤对应 Octo 冒烟测试，不对应本次提交的 OpenVLA Base / Final 对比。
+
+| 项目 | Octo 验证时的设置 |
 | --- | --- |
 | 模型 | `rail-berkeley/octo-small-1.5` |
 | checkpoint step | `300000` |

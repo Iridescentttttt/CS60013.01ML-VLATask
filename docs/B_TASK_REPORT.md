@@ -1,5 +1,7 @@
 # Octo-Small 1.5 在 BridgeData V2 上的轻量微调与 SimplerEnv 评测方案
 
+> 本文保留早期 Octo 方案和数据分片记录。课程正式提交的 Base / Final 对比是 OpenVLA-7B 的 LoRA 实验，结果与分析见 `docs/实验报告.md` 和 `results/b_formal/`。
+
 ## 1. 项目概述
 
 本项目选择课程 B 类任务。目标是以公开 VLA 模型 `rail-berkeley/octo-small-1.5` 为 Base，使用 BridgeData V2 的 WidowX 轨迹微调语言条件动作头，并在 SimplerEnv WidowX Visual Matching 的两个指定任务上比较 Base 与 Final：

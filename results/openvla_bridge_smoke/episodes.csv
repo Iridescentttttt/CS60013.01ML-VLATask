@@ -1,0 +1,2 @@
+episode_index,category,instruction,steps,video,mae,mae_xyz,mae_rotation,mae_gripper,gripper_correct
+1,in_container,put the corn in the silver pot,34,val_0001_in_container.mp4,0.06576479464393904,0.017161691298475334,0.037865813005279414,0.2952710495963091,0.7058823529411765

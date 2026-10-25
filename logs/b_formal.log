@@ -1,0 +1,131 @@
+2026-10-23 14:32:41.065974: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-23 14:32:41.066058: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 14:32:41.067112: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+loading models/openvla-7b
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:00,  5.65it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00,  6.85it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  7.58it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00,  7.20it/s]
+openvla server http://127.0.0.1:8000
+2026-10-23 14:32:48.611323: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-23 14:32:48.611377: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 14:32:48.612663: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+[2026-10-23 14:32:50.270] [svulkan2] [error] GLFW error: X11: Failed to open display 
+[2026-10-23 14:32:50.270] [svulkan2] [warning] Continue without GLFW.
+/home/lizhenkai/anaconda3/envs/simpler_env/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/lizhenkai/anaconda3/envs/simpler_env/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1110, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1110_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1111, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1111_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1112, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1112_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1113, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1113_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1114, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1114_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1115, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1115_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1116, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1116_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1117, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1117_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1118, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1118_success_False.mp4"}
+{"model": "base", "task": "widowx_spoon_on_towel", "env_seed": 1119, "success": true, "control_steps": 48, "exception": "", "video": "results/b_formal/base/widowx_spoon_on_towel_seed_1119_success_True.mp4"}
+[2026-10-23 14:35:55.447] [svulkan2] [warning] A second renderer will share the same internal context with the first one. Arguments passed to constructor will be ignored.
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2210, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2210_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2211, "success": true, "control_steps": 42, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2211_success_True.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2212, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2212_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2213, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2213_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2214, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2214_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2215, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2215_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2216, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2216_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2217, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2217_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2218, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2218_success_False.mp4"}
+{"model": "base", "task": "widowx_put_eggplant_in_basket", "env_seed": 2219, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2219_success_False.mp4"}
+{
+  "model": "base",
+  "eval_config": "config/eval_states_b_formal.json",
+  "image_size": 256,
+  "control_freq": 5,
+  "max_episode_steps": 60,
+  "model_seed": "greedy",
+  "episodes": 20,
+  "successes": 2,
+  "failures": 18,
+  "failure_videos": [
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1110_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1111_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1112_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1113_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1114_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1115_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1116_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1117_success_False.mp4",
+    "results/b_formal/base/widowx_spoon_on_towel_seed_1118_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2210_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2212_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2213_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2214_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2215_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2216_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2217_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2218_success_False.mp4",
+    "results/b_formal/base/widowx_put_eggplant_in_basket_seed_2219_success_False.mp4"
+  ]
+}
+2026-10-23 14:39:03.372844: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-23 14:39:03.372898: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 14:39:03.373994: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+loading models/openvla-7b-bridge-lora-v3
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  5.86it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  7.01it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  7.19it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.66it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.33it/s]
+openvla server http://127.0.0.1:8000
+2026-10-23 14:39:10.883049: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-23 14:39:10.883136: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-23 14:39:10.884428: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+[2026-10-23 14:39:12.505] [svulkan2] [error] GLFW error: X11: Failed to open display 
+[2026-10-23 14:39:12.505] [svulkan2] [warning] Continue without GLFW.
+/home/lizhenkai/anaconda3/envs/simpler_env/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.get_language_instruction to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.get_language_instruction` for environment variables or `env.get_wrapper_attr('get_language_instruction')` that will search the reminding wrappers.[0m
+  logger.warn(
+/home/lizhenkai/anaconda3/envs/simpler_env/lib/python3.10/site-packages/gymnasium/core.py:311: UserWarning: [33mWARN: env.robot_uid to get variables from other wrappers is deprecated and will be removed in v1.0, to get this variable you can do `env.unwrapped.robot_uid` for environment variables or `env.get_wrapper_attr('robot_uid')` that will search the reminding wrappers.[0m
+  logger.warn(
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1110, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1110_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1111, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1111_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1112, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1112_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1113, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1113_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1114, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1114_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1115, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1115_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1116, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1116_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1117, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1117_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1118, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1118_success_False.mp4"}
+{"model": "final", "task": "widowx_spoon_on_towel", "env_seed": 1119, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_spoon_on_towel_seed_1119_success_False.mp4"}
+[2026-10-23 14:42:19.963] [svulkan2] [warning] A second renderer will share the same internal context with the first one. Arguments passed to constructor will be ignored.
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2210, "success": true, "control_steps": 41, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2210_success_True.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2211, "success": true, "control_steps": 36, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2211_success_True.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2212, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2212_success_False.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2213, "success": true, "control_steps": 41, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2213_success_True.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2214, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2214_success_False.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2215, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2215_success_False.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2216, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2216_success_False.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2217, "success": false, "control_steps": 60, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2217_success_False.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2218, "success": true, "control_steps": 45, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2218_success_True.mp4"}
+{"model": "final", "task": "widowx_put_eggplant_in_basket", "env_seed": 2219, "success": true, "control_steps": 30, "exception": "", "video": "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2219_success_True.mp4"}
+{
+  "model": "final",
+  "eval_config": "config/eval_states_b_formal.json",
+  "image_size": 256,
+  "control_freq": 5,
+  "max_episode_steps": 60,
+  "model_seed": "greedy",
+  "episodes": 20,
+  "successes": 5,
+  "failures": 15,
+  "failure_videos": [
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1110_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1111_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1112_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1113_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1114_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1115_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1116_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1117_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1118_success_False.mp4",
+    "results/b_formal/final/widowx_spoon_on_towel_seed_1119_success_False.mp4",
+    "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2212_success_False.mp4",
+    "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2214_success_False.mp4",
+    "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2215_success_False.mp4",
+    "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2216_success_False.mp4",
+    "results/b_formal/final/widowx_put_eggplant_in_basket_seed_2217_success_False.mp4"
+  ]
+}

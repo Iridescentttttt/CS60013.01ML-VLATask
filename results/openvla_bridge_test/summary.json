@@ -1,0 +1,37 @@
+{
+  "model": "/home/lizhenkai/vlalora/models/openvla-7b",
+  "data_dir": "/home/lizhenkai/vlalora/data/bridge_course_subset",
+  "split_csv": "/home/lizhenkai/vlalora/artifacts/openvla_bridge_split/test.csv",
+  "unnorm_key": "bridge_orig",
+  "image_key": "observation/image_0",
+  "episodes": 128,
+  "steps": 4267,
+  "overall": {
+    "mae": 0.02619058169702419,
+    "mae_xyz": 0.007257426366687658,
+    "mae_rotation": 0.027902096448253585,
+    "mae_gripper": 0.07785550343434561,
+    "gripper_correct": 0.9243027888446215
+  },
+  "by_category": {
+    "in_container": {
+      "mae": 0.027022352387424474,
+      "mae_xyz": 0.006666621620106781,
+      "mae_rotation": 0.028056232115789934,
+      "mae_gripper": 0.08498790550428122,
+      "gripper_correct": 0.9172113289760349
+    },
+    "on_surface": {
+      "mae": 0.02522257270388593,
+      "mae_xyz": 0.007945000856242989,
+      "mae_rotation": 0.027722714421379396,
+      "mae_gripper": 0.06955486309433435,
+      "gripper_correct": 0.9325557809330629
+    }
+  },
+  "notes": [
+    "mae_xyz and mae_rotation compare OpenVLA's unnormalized bridge_orig action with the raw Bridge action.",
+    "The gripper dimension is not rescaled by bridge_orig q01/q99. gripper_correct treats both sides as open when the value is at least 0.5.",
+    "Videos replay the dataset's real camera frames. They show the logged action beside the model's prediction; they are not closed-loop rollouts."
+  ]
+}

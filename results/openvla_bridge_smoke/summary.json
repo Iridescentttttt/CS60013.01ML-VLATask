@@ -1,0 +1,30 @@
+{
+  "model": "/home/lizhenkai/vlalora/models/openvla-7b",
+  "data_dir": "/home/lizhenkai/vlalora/data/bridge_course_subset",
+  "split_csv": "/home/lizhenkai/vlalora/artifacts/openvla_bridge_split/test.csv",
+  "unnorm_key": "bridge_orig",
+  "image_key": "observation/image_0",
+  "episodes": 1,
+  "steps": 34,
+  "overall": {
+    "mae": 0.06576479464393904,
+    "mae_xyz": 0.017161691298475334,
+    "mae_rotation": 0.037865813005279414,
+    "mae_gripper": 0.2952710495963091,
+    "gripper_correct": 0.7058823529411765
+  },
+  "by_category": {
+    "in_container": {
+      "mae": 0.06576479464393904,
+      "mae_xyz": 0.017161691298475334,
+      "mae_rotation": 0.037865813005279414,
+      "mae_gripper": 0.2952710495963091,
+      "gripper_correct": 0.7058823529411765
+    }
+  },
+  "notes": [
+    "mae_xyz and mae_rotation compare OpenVLA's unnormalized bridge_orig action with the raw Bridge action.",
+    "The gripper dimension is not rescaled by bridge_orig q01/q99. gripper_correct treats both sides as open when the value is at least 0.5.",
+    "Videos replay the dataset's real camera frames. They show the logged action beside the model's prediction; they are not closed-loop rollouts."
+  ]
+}

@@ -1,0 +1,549 @@
+split,episode_index,category,instruction,steps
+train,6,in_container,take the spoon from the left bottom burner and put it in the cooking pot,58
+train,7,in_container,put cup into pot or pan,23
+train,8,in_container,flip pot upright in sink,22
+train,9,on_surface,picked a red spoon and placed it on top of an orange cloth,32
+train,11,in_container,put pear in bowl,32
+train,14,on_surface,Put the metal pot on the purple cloth.,33
+train,16,on_surface,Place the yellow brush on top of the yellow towel,36
+train,28,in_container,put croissant inside silver bowl,33
+train,32,in_container,put eggplant into pot or pan,23
+train,35,in_container,put spoon in pot,23
+train,46,on_surface,Place the strawberry on the far right edge of the table,35
+train,47,on_surface,take the lid and place it on the left side of the table,37
+train,56,in_container,flip pot upright which is in sink,20
+train,65,in_container,put carrot in pot cardboard fence,32
+train,66,in_container,Pick up the pot and place it in front of the blue cloth,45
+train,70,in_container,put pot or pan on stove and put potato in pot or pan,61
+train,74,in_container,put banana in pot cardboard fence,30
+train,86,in_container,put corn in pan which is on stove,18
+train,90,in_container,put the salmon into the red pot,51
+train,98,in_container,put pan from drying rack into sink,23
+train,101,in_container,put potato in pot cardboard fence,29
+train,106,in_container,put eggplant in pot or pan,23
+train,112,in_container,put cup into pot or pan,21
+train,115,in_container,move the silver pot in between the burners,46
+train,116,on_surface,Pick up the corn from the pot and place on the purple towel,37
+train,125,on_surface,pick the hot dog from vessel and place it on middle of the table,41
+train,126,on_surface,move the blue cloth on top of the stove,32
+train,129,in_container,the pig  rabbit was carried and put inside the pot.,34
+train,137,on_surface,put potato on plate,23
+train,152,in_container,put pot in sink,19
+train,158,in_container,Take the orange carrot and put it in the stainless steel pan,37
+train,162,in_container,put cup from counter or drying rack into sink,18
+train,173,on_surface,picked the can and place it on the middle of the table,40
+train,177,in_container,put pot or pan in sink,21
+train,189,in_container,put pepper in pot or pan,18
+train,190,in_container,put spoon into pan,23
+train,192,on_surface,Move the loaf on the table cloth.,48
+train,198,in_container,flip pot upright in sink,22
+train,200,in_container,put the blue spoon in the silver pot,39
+train,220,on_surface,put sushi on plate,23
+train,224,on_surface,Place the orange and whtie object onto the cloth.,46
+train,234,in_container,put the carrot in the silver pot,28
+train,235,in_container,put strawberry in pot or pan an put pot or pan on stove,58
+train,250,in_container,put pot or pan on stove and put stuffedduck in pot or pan,54
+train,251,in_container,put pear in bowl,30
+train,256,in_container,put the red chili pepper into the silver pot at the top of the stove,53
+train,259,in_container,put carrot in pot cardboard fence,27
+train,264,in_container,put potato in pot cardboard fence,34
+train,275,on_surface,put lemon on plate,28
+train,277,on_surface,put lemon on plate,26
+train,278,on_surface,Pick the yellow fruit and put it on the green towel,36
+train,279,in_container,put the corn inside the silver pot,31
+train,280,on_surface,put blueberries on plate sink,36
+train,288,in_container,put pear in bowl,26
+train,290,in_container,flip pot upright in sink,23
+train,294,on_surface,put carrot on plate,38
+train,316,in_container,put potato in pot cardboard fence,34
+train,320,in_container,put the blue and violet towels inside the white basket,39
+train,331,in_container,put sweet potato in pot which is in sink,18
+train,332,on_surface,put the bowl onto the orange cloth,44
+train,337,on_surface,Take the white napkin and put it on the middle of the table,22
+train,340,on_surface,put bowl on plate cardboard fence,31
+train,341,in_container,put corn in pan which is on stove,21
+train,343,in_container,put potato in pot cardboard fence,29
+train,344,in_container,put sushi in pot cardboard fence,31
+train,348,in_container,Pick up chicken leg inside of pot and place to the left.,43
+train,351,in_container,put eggplant into pot or pan,22
+train,361,on_surface,put crackerbox on plate and spatula in pot or pan on stove,66
+train,371,on_surface,PICK UP THE BANANA AND PUT ON THE ANOTHER SIDE OF THE TABLE,38
+train,384,on_surface,put spatula on plate sink,31
+train,391,in_container,put carrot in pot cardboard fence,28
+train,393,in_container,Put the potato in the cloth,31
+train,400,in_container,put pot in sink,19
+train,409,on_surface,put carrot on plate,38
+train,413,in_container,put spatula in pan,23
+train,417,on_surface,put carrot on plate,38
+train,418,in_container,put pot or pan on stove and put mushroom in pot or pan,78
+train,419,in_container,put pot or pan from sink into drying rack,23
+train,422,on_surface,put fry on plate and smallpear in pot or pan on stove,60
+train,425,in_container,put broccoli in pot,38
+train,426,on_surface,put carrot on plate,23
+train,433,in_container,flip pot upright in sink,22
+train,452,in_container,Take the green vegetable from the pot and place it in the right bottom of the table.,39
+train,458,on_surface,take the green cube and put it on the right side of the table,48
+train,459,on_surface,put the blue spoon on the top of the green cloth,30
+train,465,on_surface,take the orange object on top of the drawer and put it on the bottom right side of the table,38
+train,469,on_surface,put eggplant on plate,23
+train,472,in_container,put spoon in bowl sink,27
+train,479,on_surface,put cup on plate,38
+train,480,on_surface,put sushi on plate,28
+train,486,on_surface,Take out the cheese and put it on the orange cloth.,40
+train,487,in_container,put broccoli in pot or pan,25
+train,490,in_container,move the blue cup into the yellow tray,58
+train,500,in_container,open the pot and put the lid in the right side of the table,32
+train,502,on_surface,Place the pot on the front right corner of the table,34
+train,525,on_surface,pick the knife and place it on the front edge of the table,44
+train,532,on_surface,Pick up the eggplant from pot put it on the table,39
+train,535,in_container,put spoon in bowl sink,31
+train,545,on_surface,Take the toy out of the drawer and put it on the top left of the table.,26
+train,550,on_surface,put carrot on plate,38
+train,552,in_container,put broccoli in pot,38
+train,555,on_surface,put the  yelow figure on the top edge of the cloth,25
+train,561,in_container,flip pot upright in sink,18
+train,576,in_container,Move the pan in front of the blue cloth,36
+train,585,in_container,put pepper in pot or pan,18
+train,586,in_container,flip pot upright in sink,22
+train,588,on_surface,remove the red cube from the green arc top and placed it on the table,43
+train,589,in_container,put blue knife in silver container on the right side of stove,53
+train,593,in_container,move metal pot in between knife and red pepper,45
+train,599,in_container,put pot or pan on stove and put mushroom in pot or pan,78
+train,608,on_surface,take the white arch on the table,20
+train,613,in_container,put the blue object in the silver pot.,58
+train,620,on_surface,Put the onion on the yellow cloth,29
+train,630,in_container,put strawberry in pot,22
+train,635,in_container,Move the purple towel to the left of the table in front of the pot.,32
+train,637,on_surface,move the cloth on the top edge of the table,24
+train,641,on_surface,grab the yellow and put it on the top side of the table,37
+train,642,on_surface,put the white object on the top right side of the orange cloth,35
+train,654,in_container,put the blue object inside the silver pot,46
+train,664,on_surface,put the blue figure on the top edge of the cloth,41
+train,676,in_container,put carrot in pot cardboard fence,26
+train,680,on_surface,put carrot on plate,23
+train,686,in_container,flip pot upright in sink,23
+train,694,in_container,put eggplant into pot or pan,18
+train,695,in_container,put stuffedduck in pan,34
+train,696,in_container,put the orange container in the gray basket,50
+train,714,in_container,put beet in pot sink,26
+train,722,on_surface,Put the red eggplant on the blue cloth.,43
+train,723,in_container,put pan in sink,22
+train,724,on_surface,Place the pot on the yellow cloth,46
+train,728,in_container,flip pot upright in sink,18
+train,730,on_surface,put spatula on plate sink,35
+train,741,on_surface,Place the pot on top of the towel,48
+train,742,on_surface,move the silver pot on the orange cloth.,39
+train,747,in_container,Pick blue object from Burne and keep it in silver Bowl,28
+train,749,in_container,put the maroon vegetable inside the stainless steel pot,43
+train,752,on_surface,move the orange cloth on top of the laundry machine,40
+train,757,on_surface,Place the violet cloth on the far left edge of the table,31
+train,764,in_container,put fry in pot or pan an put pot or pan on stove,77
+train,765,in_container,put knife in pot cardboard fence,33
+train,768,on_surface,put carrot on plate,38
+train,769,in_container,put pepper in pot or pan,17
+train,770,on_surface,take the green vegetable and put it on the blue towel,38
+train,772,on_surface,put the blue figure on the top edge of the cloth,37
+train,774,on_surface,put the green spatula on top of the blue cloth,29
+train,775,on_surface,put sushi on plate,26
+train,783,in_container,put brush into pot or pan,23
+train,786,on_surface,put the blue cube on the middle of the table,47
+train,796,on_surface,put the blue figure on the top edge of the cloth,33
+train,803,on_surface,Place the banana on the far edge of the table,47
+train,815,on_surface,move the blue object on the upper left of the table,38
+train,818,in_container,put pan from sink into drying rack,23
+train,819,on_surface,put blueberries on plate sink,32
+train,821,on_surface,put lemon on plate,28
+train,826,in_container,Pick up the pear and place it in the silver pot.,28
+train,832,on_surface,Put the orange pot on the top right side of the table,33
+train,833,in_container,Pick up the mushroom and place it in the metal pot.,35
+train,844,on_surface,put carrot on plate,38
+train,853,on_surface,put cup on plate,38
+train,864,on_surface,pick the orange thing and place it on the cloth,29
+train,871,in_container,put potato in pot or pan,23
+train,872,in_container,put carrot in pot cardboard fence,34
+train,887,in_container,put the corn in the silver pot,25
+train,889,on_surface,put the green spoon on top of the blue cloth,62
+train,896,in_container,flip pot upright in sink,19
+train,898,on_surface,Place the yellow brush on the purple cloth.,30
+train,902,in_container,put sweet potato in pan which is on stove,23
+train,905,on_surface,take the sushi out of the drawer and place it on the bottom center of the table,43
+train,909,in_container,Take the carrot and place it inside the stainless steel pot,48
+train,913,in_container,Put the green pepper into the silver pan.,38
+train,915,in_container,put sweet potato in pot,23
+train,925,on_surface,put carrot on plate,23
+train,932,in_container,put stuffedduck in pan,38
+train,947,on_surface,remove a arch on the table,48
+train,955,on_surface,grab the orange towel that is on the left burner and place on the lower left side of the stove,40
+train,959,on_surface,put carrot on plate,23
+train,960,in_container,put broccoli in pot,38
+train,964,on_surface,Place the pot on the yellow cloth.,48
+train,973,on_surface,put the white arch on left side of the table,39
+train,976,in_container,flip pot upright which is in sink,23
+train,977,on_surface,put the red spoon on the yellow cloth,30
+train,986,in_container,Place the orange towel in front of the oven to the left of the pot.,28
+train,993,on_surface,put carrot on plate,23
+train,999,on_surface,remove the yellow object from the drawer and put on the left side of the table,38
+train,1010,on_surface,put the blue figure on the top edge of the cloth,40
+train,1011,on_surface,put cup on plate,34
+train,1013,on_surface,put the red thing on top of the cloth,39
+train,1015,in_container,put redcube in pan and put pan on stove,69
+train,1019,in_container,put the salmon inside the silver pot,40
+train,1022,on_surface,move the yellow cloth on the top corner of the burner,40
+train,1024,in_container,put can in pot,28
+train,1030,on_surface,put cup on plate,31
+train,1033,in_container,put pear in bowl,30
+train,1039,on_surface,"Move the spoon so it is face down on the blue towel, with the handle hanging over the edge on the right.",34
+train,1056,in_container,flip pot upright which is in sink,17
+train,1071,in_container,moved the broccoli from the left burner to inside the silver pot,42
+train,1074,in_container,put carrot in bowl,21
+train,1080,on_surface,put sushi on plate,26
+train,1096,in_container,Move the green spatula in front of the pot,48
+train,1107,in_container,put banana in pot or pan,24
+train,1111,in_container,flip pot upright in sink,21
+train,1114,on_surface,Put the steak knife on the yellow cloth.,26
+train,1139,on_surface,remove banana from vessel and keep it on the center corner of the table,37
+train,1161,in_container,Move the blue spoon in front of the pot with cheese,29
+train,1162,on_surface,put spatula on plate sink,29
+train,1163,in_container,put corn in bowl sink,27
+train,1169,in_container,pour almonds in pot,23
+train,1170,on_surface,put the blue figure on the top edge of the cloth,33
+train,1172,in_container,move the silver pot in the middle of the table,33
+train,1173,on_surface,Place the salt bottle on the far edge of the table,48
+train,1190,in_container,flip pot upright in sink,23
+train,1191,in_container,put potato in pot cardboard fence,31
+train,1194,in_container,put corn in pot which is in sink,16
+train,1195,in_container,put cucumber in cup,35
+train,1202,on_surface,put eggplant on plate,23
+train,1212,on_surface,Place the pot on the blue cloth,29
+train,1213,on_surface,fold the cloth on the stove from left to right,48
+train,1218,in_container,move the silver pot in the bottom right side of the burner,52
+train,1223,in_container,Put the sushi inside the pot.,36
+train,1224,on_surface,put sushi on plate,23
+train,1226,in_container,put pan from drying rack into sink,23
+train,1234,in_container,Place the tomato inside the pot,27
+train,1240,on_surface,put cube on plate and smalltomato in pot or pan in sink,78
+train,1244,in_container,moved pan in the yellow cloth,39
+train,1248,in_container,put the eggplant inside the silver pot,39
+train,1250,in_container,put pot or pan on stove and put blueberry in pot or pan,67
+train,1252,on_surface,put the tomato on top of the blue cloth,37
+train,1257,in_container,put pear in bowl,28
+train,1270,in_container,put pan on stove and put stuffedduck in pan,65
+train,1276,on_surface,put the silver pot on the top of the yellow towel,32
+train,1283,on_surface,make cloth stand on left side of the table,38
+train,1285,on_surface,put the silver pot on top of the violet towel,24
+train,1295,in_container,put the orange object in the silver pot.,31
+train,1301,on_surface,put the red fork on top of the violet towel,32
+train,1304,in_container,put pan from drying rack into sink,20
+train,1305,on_surface,put the yellow figure on the top edge of the cloth,48
+train,1306,in_container,put sushi in pot or pan,22
+train,1308,on_surface,put the blue figure on the top edge of the cloth,43
+train,1320,on_surface,pick up the cube from the cloth and place it on the left of the table,41
+train,1328,in_container,Put the spoon into the pot.,47
+train,1343,on_surface,put cup on plate,30
+train,1347,on_surface,put bowl on plate,31
+train,1351,in_container,put broccoli in pot,34
+train,1354,in_container,put banana in pot cardboard fence,31
+train,1362,on_surface,move the blue spoon on top of the orange cloth,27
+train,1363,in_container,move the yellow knife in the silver pot,41
+train,1364,on_surface,take the blue object and place it on the upper left side of the table,36
+train,1373,in_container,put cup into pot or pan,23
+train,1380,on_surface,put carrot on plate,38
+train,1392,on_surface,Take the green hand towel out of the basket and put it on the right side of the table.,31
+train,1393,on_surface,put the blue figure on the top edge of the cloth,39
+train,1395,in_container,put cucumber in cup,37
+train,1397,in_container,Place the croissant in the pot,37
+train,1408,on_surface,put apple on plate and crossaint in pot or pan on stove,78
+train,1415,in_container,put broccoli in pot,38
+train,1418,on_surface,Place the yellow brush on the blue cloth.,31
+train,1421,in_container,put the laundry in the basket,48
+train,1428,on_surface,move orange onto yellow towel,34
+train,1429,in_container,put corn in pot which is in sink,21
+train,1437,on_surface,put the banana on the yellow cloth,33
+train,1441,in_container,put can in pot,28
+train,1450,on_surface,take the pot and put it on top of the green cloth,31
+train,1459,in_container,put banana in pot cardboard fence,28
+train,1472,on_surface,put the blue figure on the top edge of the cloth,26
+train,1478,in_container,put pear in bowl,24
+train,1487,in_container,put sushi in pot or pan,23
+train,1494,on_surface,Put red spoon on top of blue cloth,27
+train,1497,on_surface,Place the orange cloth on the far edge of the table,31
+train,1519,on_surface,move the cloth to left side on the table,25
+train,1524,in_container,put pot or pan on stove and put fry in pot or pan,67
+train,1542,in_container,put broccoli in pot,35
+train,1548,in_container,put pan on stove and put stuffedduck in pan,78
+train,1550,on_surface,put the bread on top of the purple cloth,34
+train,1568,in_container,put the yellow cloth into the white basket,37
+train,1569,in_container,Put the knife in the pot,55
+train,1573,in_container,put cup into pot or pan,20
+train,1574,in_container,put potato in pot cardboard fence,29
+train,1575,on_surface,move the block with a hole on the left side of the table,34
+train,1580,in_container,flip pot upright in sink,23
+train,1586,on_surface,put pear on plate,24
+train,1598,on_surface,put eggplant on plate and largepotato in pot or pan in sink,78
+train,1599,on_surface,put corn on plate,28
+train,1603,on_surface,put lemon on plate,27
+train,1604,on_surface,move ball diagonally on the top right corner of the table,35
+train,1606,in_container,put pot or pan from sink into drying rack,23
+train,1608,in_container,Put the drumstick in the metal bowl.,33
+train,1614,on_surface,takes the red object and places it on top of the table,34
+train,1616,on_surface,put the sushi on the right upper side of the table,36
+train,1619,on_surface,picks the red thing and puts it on the lower right side of the table,26
+train,1623,in_container,put pepper in pot or pan,13
+train,1629,on_surface,put potato on plate,25
+train,1639,in_container,put the white mushroom in the silver pot,36
+train,1647,on_surface,put bowl on plate,29
+train,1648,on_surface,put the silver pot on the orange cloth,36
+train,1652,in_container,put pear in bowl,31
+train,1657,in_container,put cucumber in cup,32
+train,1666,on_surface,take off the silver pot lid and place on the table between the pot and the blue cloth,67
+train,1690,in_container,put eggplant into pot or pan,23
+train,1704,in_container,flip pot upright in sink,20
+train,1706,in_container,flip pot upright in sink,18
+train,1709,in_container,put pot in sink,20
+train,1711,on_surface,Place pot on top of orange towel,45
+train,1716,in_container,put can in pot,26
+train,1725,in_container,pour almonds in pot,37
+train,1730,in_container,put spatula in pan,23
+train,1743,in_container,Put the cover into silver pot,28
+train,1746,on_surface,put the yellow brush on the top of the towel,38
+train,1748,in_container,put cucumber in cup,31
+train,1750,in_container,put broccoli in pot,38
+train,1761,in_container,put the yellow duck in the silver pot,35
+train,1772,in_container,put sushi in pot or pan,23
+train,1779,on_surface,put the yellow towel on the left burner,36
+train,1781,in_container,flip pot upright which is in sink,18
+train,1793,in_container,put broccoli in pot or pan,26
+train,1801,on_surface,Pick up chicken leg on purple towel and put inside silver pot.,39
+train,1804,on_surface,put lemon on plate,24
+train,1812,on_surface,Move the spatula and place on purple towel,48
+train,1831,on_surface,put the blue figure on the top edge of the cloth,46
+train,1833,in_container,put cup from anywhere into sink,23
+train,1837,in_container,put spoon in pot,20
+train,1839,on_surface,Put the spoon on the cloth.,48
+train,1847,in_container,Place the orange carrot inside the pot,38
+train,1858,in_container,put the glass bowl into burner,56
+train,1866,in_container,Put the stuffed dog inside the pot,33
+train,1869,in_container,put cup from counter or drying rack into sink,20
+train,1871,on_surface,put mushroom on plate and pickle in pot or pan on stove,59
+train,1872,on_surface,put potato on plate,28
+train,1882,on_surface,put stuffedduck on plate and egg in pot or pan on stove,73
+train,1885,in_container,put potato in pot cardboard fence,34
+train,1886,on_surface,put carrot on plate,28
+train,1887,on_surface,put carrot on plate,38
+train,1893,in_container,put spoon into pan,23
+train,1896,in_container,take the orange cloth out of the washing machine and put it inside the white basket,42
+train,1897,in_container,put broccoli in pot,36
+train,1901,in_container,put strawberry in pot,17
+train,1905,in_container,put the red strawberry into the brown pot,41
+train,1907,on_surface,Place the red fork on top of the green towel,47
+train,1912,in_container,put eggplant into pan,23
+train,1930,in_container,put the ball in the cupput the ball in the cup,44
+train,1933,in_container,put pear in bowl,26
+train,1948,on_surface,put carrot on plate,37
+train,1954,on_surface,put cup on plate,38
+train,1960,on_surface,Put the green object on top of the blue cloth touching spoon,38
+train,1966,on_surface,take sushi from yellow container and put on top middle of the table,36
+train,1967,on_surface,move the ladle on the upper side of the table,37
+train,1971,on_surface,move the strawberry on the right side of the table,36
+train,1976,in_container,put eggplant in pot or pan,23
+train,1988,in_container,put sweet potato in pot which is in sink,23
+train,1989,in_container,flip orange pot upright in sink,16
+train,2005,in_container,put eggplant into pot or pan,20
+train,2007,on_surface,Place the object onto the table.,46
+train,2009,in_container,put pepper in pot or pan,19
+train,2016,in_container,put the yellow knife inside the orange pot.,40
+train,2020,in_container,put green squash into pot or pan,19
+train,2021,in_container,put knife in pot cardboard fence,37
+train,2024,in_container,put corn in pan which is on stove,16
+train,2027,on_surface,move the orange cloth on the upper right corner of the stove,23
+train,2038,in_container,Pick up the mushroom and place it inside the pot.,37
+train,2042,in_container,move animal into bowl,48
+train,2046,in_container,put brush into pot or pan,17
+train,2050,on_surface,put cereal on plate and sweetpotato in pot or pan in sink,78
+train,2063,on_surface,remove lid from orange towel and placed it on the silver pot,30
+train,2073,in_container,put pear in bowl,28
+train,2074,in_container,put pot or pan from sink into drying rack,23
+train,2079,on_surface,Place the bread on top of the purple towel,36
+train,2086,on_surface,put carrot on plate,38
+train,2090,in_container,Put the corn in the pan.,36
+train,2091,in_container,put pot or pan in sink,23
+train,2096,in_container,put pan from sink into drying rack,23
+train,2113,on_surface,Put the red spoon on the left side of the orange cloth,48
+train,2122,on_surface,take the green pepper on the pot and put it on the table,91
+train,2125,in_container,move the silver pot in the upper right side of the burner,28
+train,2134,on_surface,put sushi on plate,25
+train,2135,on_surface,Pick up the pot and place it on the left of the green cloth,44
+train,2146,in_container,take the egg in the pot,52
+train,2148,on_surface,put eggplant on plate and largepotato in pot or pan in sink,78
+train,2151,on_surface,put the cone left side on the table,48
+train,2164,in_container,Place the pot in the middle of the table,33
+train,2166,in_container,put beet in pot sink,31
+train,2169,in_container,put corn in pan which is on stove,15
+train,2174,on_surface,moved the blue cloth on the top left side of the burner,33
+train,2175,in_container,put the toy in to the pot,58
+train,2177,in_container,put pot or pan from sink into drying rack,23
+train,2182,in_container,put knife in pot cardboard fence,37
+train,2185,on_surface,Pick the vessel from the left corner and place it on the middle of the blue cloth,39
+train,2187,in_container,move the purple towel inside the white basket,38
+train,2196,on_surface,put stuffedduck on plate and egg in pot or pan in sink,74
+train,2201,on_surface,put carrot on plate,28
+train,2207,in_container,put pot or pan in sink,22
+train,2208,on_surface,take the green object out of the silver pot and put it on top of the purple cloth,46
+train,2219,in_container,Put the yellow pepper inside the metal pot.,47
+train,2222,on_surface,moved the silver pot on the top of the towel,31
+train,2223,on_surface,Place the spatula on the left side of the table,41
+train,2232,on_surface,put carrot on plate,38
+train,2233,in_container,put potato in pot cardboard fence,30
+train,2234,in_container,put eggplant in pot or pan,21
+train,2235,in_container,Put the pot in the bottom right hand corner of the table.,37
+train,2238,in_container,Set the broccoli inside the pot.,30
+train,2251,in_container,flip pot upright in sink,22
+train,2259,on_surface,move the purple towel on the middle edge of table between spoon and blue object,35
+train,2263,on_surface,move the silver pot to the left side on the table,33
+train,2269,in_container,take the silver lid off the silver pot and put it in the upper right side of the table,37
+train,2272,in_container,put can in pot,25
+train,2275,in_container,put cup from counter or drying rack into sink,21
+train,2276,on_surface,put blueberries on plate sink,29
+train,2278,in_container,put banana in pot cardboard fence,32
+train,2281,in_container,put cup from counter or drying rack into sink,23
+train,2282,on_surface,put carrot on plate,38
+train,2283,in_container,put pepper in pot or pan,16
+train,2290,on_surface,put carrot on plate,38
+train,2291,in_container,Place the potato in the silver pot.,48
+train,2304,in_container,put stuffedpig in pan,49
+train,2310,in_container,put corn in pot which is in sink,17
+train,2318,on_surface,Place the strawberry on the right edge of the table.,30
+train,2322,in_container,flip pot upright in sink,19
+train,2323,in_container,put the ball in the cup,48
+train,2325,in_container,flip pot upright in sink,20
+train,2326,on_surface,Pick up the pot from above the purple cloth and placed it on table surface,34
+train,2330,in_container,moved the green object into the silver pot,26
+train,2331,on_surface,place the red figure on top right edge of the cloth,41
+train,2342,in_container,put eggplant in pot or pan,19
+train,2345,in_container,put spoon in bowl sink,34
+train,2346,on_surface,Put the pot on top of the blue dish cloth,21
+train,2347,in_container,put pepper in pot or pan,15
+train,2355,in_container,move the pot cover in front of the stove,34
+train,2359,on_surface,put the orange on the left side of the table,45
+train,2361,on_surface,put the blue spoon on the orange cloth,26
+train,2363,on_surface,remove the lid from the pot and put it on the upper right side of the table,39
+train,2364,on_surface,put carrot on plate,22
+train,2368,on_surface,put the orange figure on the top edge of the cloth,47
+train,2369,on_surface,put potato on plate,23
+train,2374,on_surface,Place the vessel on the orange cloth,35
+train,2384,on_surface,Place the pot on the yellow cloth,46
+train,2400,in_container,put pepper in pot or pan,14
+train,2405,in_container,put spoon into pan,20
+train,2407,on_surface,put bowl onto towel,34
+train,2412,in_container,Place the orange object  inside the pot,29
+train,2414,on_surface,put carrot on plate,38
+train,2416,in_container,Put the corn into the silver bowl.,30
+train,2431,on_surface,put the blue spoon on the orange cloth,24
+train,2432,in_container,put broccoli in bowl,26
+train,2444,in_container,put cup into pot or pan,23
+train,2449,on_surface,put the blue brush on top of the blue cloth,48
+train,2455,in_container,put eggplant into pot or pan,23
+train,2473,on_surface,Place the spatula on the far right edge of the table,37
+train,2477,in_container,put pan from sink into drying rack,23
+train,2485,in_container,put banana in pot or pan,24
+train,2502,in_container,put broccoli in pot,38
+train,2506,on_surface,put potato on plate,28
+train,2508,on_surface,put the blue figure on the top edge of the cloth,45
+train,2510,on_surface,Place the chicken wing on the blue cloth.,43
+train,2513,on_surface,move vessel on the green cloth towards left on the corner of the table,46
+train,2515,in_container,put the pink object in the silver bowl,58
+train,2516,in_container,put the green item in a pot,39
+train,2518,in_container,put pan from drying rack into sink,21
+train,2525,on_surface,Place the vessel on the far edge of the table,39
+train,2529,on_surface,Place the pot on top of the orange towel,33
+train,2539,in_container,put spoon into pan,23
+train,2548,on_surface,put blueberries on plate sink,32
+train,2552,on_surface,put potato on plate,28
+train,2565,on_surface,move the silver pot to the bottom of the table on the left,38
+train,2579,on_surface,Place the yellow toy on the yellow cloth and fork.,48
+train,2585,in_container,Move the pot in front of the cloth.,38
+train,2589,on_surface,move the sushi on the right side of the table,36
+train,2592,on_surface,pick tomato from yellow cloth and place on the right bottom of the table,38
+train,2597,on_surface,Put the green and yellow bottle on top of the yellow towel.,45
+train,2598,in_container,move the red spoon in the middle and the right side of silver pot,33
+train,2608,on_surface,move the green cloth on the bottom right corner of the stove,24
+train,2609,on_surface,Put the blue brush onto the purple cloth,32
+train,2616,on_surface,put blueberries on plate sink,35
+train,2617,in_container,Place the strawberry in the metal bowl by the microwave.,27
+train,2640,on_surface,put redpepper on plate and brush in pot or pan on stove,76
+train,2643,on_surface,put pear on plate,24
+train,2644,in_container,put pear in bowl,22
+train,2646,on_surface,put lemon on plate,28
+train,2659,in_container,put broccoli in pot,32
+train,2665,on_surface,Place the spatula on the far edge of the table,48
+train,2668,in_container,put broccoli in pot,38
+train,2675,in_container,put corn in pan which is on stove,19
+train,2676,in_container,flip pot upright in sink,21
+train,2680,on_surface,put the nigirizushi on the bottom left edge of the towel,37
+train,2685,on_surface,pick the vessel from left side of the table and put it down on right side,46
+train,2696,in_container,put banana in pot or pan,24
+train,2704,in_container,put sushi in pot or pan,23
+train,2706,in_container,put eggplant into pan,21
+train,2716,in_container,Place the pot in front of the blue cloth,25
+train,2718,on_surface,unfold the cloth yellon on the top right in the table,36
+train,2724,in_container,put brush into pot or pan,20
+train,2725,in_container,put pear in bowl,36
+train,2728,on_surface,put the orange on the towel,43
+train,2729,in_container,put pear in bowl,33
+train,2731,in_container,put pan from drying rack into sink,22
+train,2740,in_container,put spoon into pan,23
+train,2745,on_surface,Move the blue cloth onto the metal ice cream scoop,30
+train,2746,on_surface,"Pick up silver pot on top of blue cloth, move it diagonally.",28
+train,2755,on_surface,unfold the blue cloth on the bottom left side of the stove from top right to bottom left,35
+train,2766,in_container,put pot in sink,20
+train,2772,in_container,Put the red capsicum in the pot,31
+train,2788,on_surface,move the red object to the top on the table,22
+train,2804,in_container,put broccoli in pot,38
+train,2819,on_surface,Put silver pan on green cloth and toward lower table edge.,48
+train,2825,in_container,put pot or pan in sink,23
+train,2828,in_container,Move the green object inside the pot to upper right side of the stove,29
+train,2835,in_container,move the silver pot into the upper right side of the table,36
+train,2842,in_container,put spoon into pan,22
+train,2854,in_container,put carrot in pot or pan,22
+train,2857,in_container,put brush into pot or pan,23
+train,2863,in_container,put spoon in bowl sink,32
+train,2871,in_container,put the chicken leg piece in side the silver pot,26
+train,2875,on_surface,put the blue figure on the top edge of the cloth,44
+train,2879,on_surface,put carrot on plate,38
+train,2882,on_surface,take the yellow cloth from the basket and put it on the table,30
+train,2883,on_surface,move the silver pot on the right side of the table,27
+train,2887,in_container,Move mushroom and place it inside of the pot.,28
+train,2932,on_surface,move the pot on the purple cloth.,37
+train,2934,in_container,put the green towel in the basket,36
+train,2936,on_surface,pick the can from the table and put it on top left side.,48
+train,2946,in_container,put mushroom in pot or pan an put pot or pan on stove,74
+train,2948,in_container,put corn in pot which is in sink,15
+train,2959,on_surface,put sushi on plate,23
+train,2966,on_surface,put the spoon on the purple cloth,48
+train,2976,on_surface,put the ice cream figure on the left side of the cloth,35
+train,2981,in_container,put pot or pan in sink,23
+train,2985,in_container,put sweet potato in pot which is in sink,21
+train,2988,on_surface,put the silver pot on the green cloth,29
+train,2995,on_surface,place the red towel on the right edge of the table.,46
+train,3005,on_surface,put carrot on plate,18
+train,3007,in_container,put cup from anywhere into sink,19
+train,3009,on_surface,Pick up the green sausage from pot and put it on the table,46
+train,3013,in_container,put pepper in pan,25
+train,3015,in_container,Move the metal bowl in front of the orange cloth.,35
+train,3034,in_container,put stuffedduck in pan,37
+train,3039,in_container,put knife in pot cardboard fence,38
+train,3047,on_surface,put potato on plate,26
+train,3050,on_surface,put cube on plate and smalltomato in pot or pan in sink,78
+train,3056,on_surface,Put the pot on the cloth.,35
+train,3061,in_container,put cup from anywhere into sink,19
+train,3068,in_container,put spatula in pan,20
+train,3080,in_container,Place the potato inside the pot,30
+train,3083,in_container,put pepper in pot or pan,20
+train,3091,on_surface,placed a yellow cube on the table,42
+train,3094,in_container,put cup from anywhere into sink,21
+train,3095,on_surface,remove the toy from the towel and keep in on the front edge,42
+train,3098,on_surface,take the object out of the drawer and place it on the middle left of the table.,39
+train,3099,in_container,put pan on stove and put stuffedduck in pan,68
+train,3105,in_container,put pot or pan on stove and put corncob in pot or pan,78
+train,3108,on_surface,put the blue spatula to the right top side of the burner on the green cloth,31
+train,3113,in_container,Pick up the egg from the towel and put it in the silver pot.,33

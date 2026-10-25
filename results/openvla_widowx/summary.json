@@ -1,0 +1,15 @@
+{
+  "episodes": 6,
+  "successes": 0,
+  "failures": 6,
+  "max_episode_steps": 60,
+  "control_freq": 5,
+  "failure_videos": [
+    "results/openvla_widowx/widowx_spoon_on_towel_seed_1100_success_False.mp4",
+    "results/openvla_widowx/widowx_spoon_on_towel_seed_1101_success_False.mp4",
+    "results/openvla_widowx/widowx_spoon_on_towel_seed_1102_success_False.mp4",
+    "results/openvla_widowx/widowx_put_eggplant_in_basket_seed_2200_success_False.mp4",
+    "results/openvla_widowx/widowx_put_eggplant_in_basket_seed_2201_success_False.mp4",
+    "results/openvla_widowx/widowx_put_eggplant_in_basket_seed_2202_success_False.mp4"
+  ]
+}

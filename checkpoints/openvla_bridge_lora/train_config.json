@@ -1,0 +1,30 @@
+{
+  "base_model": "/home/lizhenkai/vlalora/models/openvla-7b",
+  "train_trajectories": 548,
+  "train_samples": 18639,
+  "val_trajectories": 128,
+  "val_samples": 4267,
+  "max_steps": 800,
+  "grad_accumulation_steps": 8,
+  "effective_batch_size": 8,
+  "learning_rate": 0.0005,
+  "lora_rank": 32,
+  "lora_alpha": 16,
+  "lora_targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "normalization": "base checkpoint bridge_orig q01/q99, gripper unmasked",
+  "final_rule": "lowest validation action-token loss; SimplerEnv is not used",
+  "parameters": {
+    "total": 7621191104,
+    "trainable": 79953920,
+    "trainable_ratio": 0.01049100054163922
+  },
+  "seed": 42
+}

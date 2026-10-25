@@ -3,10 +3,15 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 .venv/
-results/
-checkpoints/
-videos/
 wandb/
-logs/
-data/
 *.partial
+
+# Base weights and merged models are multi-gigabyte. The public Base is
+# https://huggingface.co/openvla/openvla-7b
+models/
+
+# Bridge RLDS shards. Shard lists live in artifacts/.
+data/
+
+# v1 LoRA weight exceeds GitHub's 100MB file limit. Its config and log stay.
+checkpoints/openvla_bridge_lora/best_adapter/adapter_model.safetensors
